@@ -750,7 +750,7 @@
 		C33CBF761891AEC600854F7A /* NativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeManager.h; path = ../Classes/Manager/NativeManager.h; sourceTree = "<group>"; };
 		C33CBF801891B18100854F7A /* GamePlayManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamePlayManager.cpp; path = ../Classes/Manager/GamePlayManager.cpp; sourceTree = "<group>"; };
 		C33CBF811891B18100854F7A /* GamePlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayManager.h; path = ../Classes/Manager/GamePlayManager.h; sourceTree = "<group>"; };
-		C33CBF831891B30500854F7A /* CommonString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonString.h; path = ../Classes/Common/CommonString.h; sourceTree = "<group>"; };
+		C33CBF841891B66900854F7A /* CommonValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonValue.h; path = ../Classes/Common/CommonValue.h; sourceTree = "<group>"; };
 		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; };
 		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; };
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; };
@@ -1823,7 +1823,7 @@
 			isa = PBXGroup;
 			children = (
 				C3BF221D1891656200270D56 /* CommonEnum.h */,
-				C33CBF831891B30500854F7A /* CommonString.h */,
+				C33CBF841891B66900854F7A /* CommonValue.h */,
 			);
 			name = Common;
 			sourceTree = "<group>";

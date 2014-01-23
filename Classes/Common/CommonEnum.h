@@ -19,7 +19,13 @@ namespace CommonEnum {
         eSceneTitle,
         eSceneHome,
         eSceneGame,
-    } eSceneType;
+    } SceneType;
+    
+    typedef enum {
+        ePlatformUnknown,
+        ePlatformiOS,
+        ePlatformAndroid,
+    } PlatformType;
     
 };
 

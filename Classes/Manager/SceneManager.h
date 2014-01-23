@@ -20,13 +20,13 @@ private:
     virtual ~SceneManager();
     virtual bool init();
     
-    cocos2d::CCScene* getScene(CommonEnum::eSceneType sceneType);
+    cocos2d::CCScene* getScene(CommonEnum::SceneType sceneType);
     
 public:
     static SceneManager* getInstance();
     CREATE_FUNC(SceneManager);
     
-    void moveToScene(CommonEnum::eSceneType sceneType, bool isReplace=false);
+    void moveToScene(CommonEnum::SceneType sceneType, bool isReplace=false);
     
 };
 

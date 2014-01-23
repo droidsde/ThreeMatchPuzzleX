@@ -30,7 +30,7 @@ SceneManager::~SceneManager() {
 bool SceneManager::init() {
     return true;
 }
-void SceneManager::moveToScene(CommonEnum::eSceneType sceneType,bool isReplace) {
+void SceneManager::moveToScene(CommonEnum::SceneType sceneType,bool isReplace) {
     CCDirector* director = CCDirector::sharedDirector();
     CCScene* runningScene = director->getRunningScene();
     CCScene* newScene = getScene(sceneType);
@@ -47,7 +47,7 @@ void SceneManager::moveToScene(CommonEnum::eSceneType sceneType,bool isReplace) 
     }
     
 }
-CCScene* SceneManager::getScene(CommonEnum::eSceneType sceneType) {
+CCScene* SceneManager::getScene(CommonEnum::SceneType sceneType) {
     switch (sceneType) {
         case CommonEnum::eSceneSplash:
             return SplashScene::scene();
