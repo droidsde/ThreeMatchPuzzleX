@@ -10,11 +10,13 @@
 #define __AniCrushSagaPang__iScenes__
 
 #include <iostream>
+#include "cocos2d.h"
 
-class iScenes {
+class iScene : public cocos2d::CCScene {
 protected:
-    iScenes();
-    virtual ~iScenes();
+    iScene();
+    ~iScene();
+    
 public:
 };
 

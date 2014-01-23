@@ -6,9 +6,9 @@
 //
 //
 
-#include "iScenes.h"
+#include "iScene.h"
 
-iScenes::iScenes() {
+iScene::iScene() {
 }
-iScenes::~iScenes() {
+iScene::~iScene() {
 }

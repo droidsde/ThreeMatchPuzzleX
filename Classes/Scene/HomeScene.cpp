@@ -7,3 +7,9 @@
 //
 
 #include "HomeScene.h"
+
+bool HomeScene::init() {
+    if( !iScene::init() )
+        return false;
+    return true;
+}

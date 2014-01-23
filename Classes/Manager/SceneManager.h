@@ -12,10 +12,12 @@
 #include <iostream>
 #include "cocos2d.h"
 
+
 class SceneManager : cocos2d::CCObject {
 private:
     SceneManager();
     virtual ~SceneManager();
+    
 public:
     virtual bool init();
     CREATE_FUNC(SceneManager);

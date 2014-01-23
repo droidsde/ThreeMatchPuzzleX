@@ -7,3 +7,9 @@
 //
 
 #include "TitleScene.h"
+
+bool TitleScene::init() {
+    if( !iScene::init() )
+        return false;
+    return true;
+}

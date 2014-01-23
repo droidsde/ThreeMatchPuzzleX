@@ -10,5 +10,13 @@
 #define __AniCrushSagaPang__GameScene__
 
 #include <iostream>
+#include "iScene.h"
+
+class GameScene : public iScene {
+public:
+    virtual bool init();
+    
+    CREATE_FUNC(GameScene);
+};
 
 #endif /* defined(__AniCrushSagaPang__GameScene__) */

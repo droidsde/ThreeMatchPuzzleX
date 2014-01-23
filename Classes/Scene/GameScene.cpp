@@ -7,3 +7,9 @@
 //
 
 #include "GameScene.h"
+
+bool GameScene::init() {
+    if( !iScene::init() )
+        return false;
+    return true;
+}

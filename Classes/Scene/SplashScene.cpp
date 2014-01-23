@@ -7,3 +7,9 @@
 //
 
 #include "SplashScene.h"
+
+bool SplashScene::init() {
+    if( !iScene::init() )
+        return false;
+    return true;
+}
