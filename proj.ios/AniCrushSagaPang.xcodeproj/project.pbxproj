@@ -240,6 +240,7 @@
 		C33CBF711891AE2200854F7A /* iNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF6F1891AE2200854F7A /* iNative.cpp */; };
 		C33CBF741891AE3800854F7A /* AndroidNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF721891AE3800854F7A /* AndroidNative.cpp */; };
 		C33CBF771891AEC600854F7A /* NativeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF751891AEC600854F7A /* NativeManager.cpp */; };
+		C33CBF821891B18100854F7A /* GamePlayManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF801891B18100854F7A /* GamePlayManager.cpp */; };
 		C3BF2206189156FF00270D56 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2204189156FF00270D56 /* SceneManager.cpp */; };
 		C3BF220A1891583500270D56 /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScene.cpp */; };
 		C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF220C1891587F00270D56 /* SplashScene.cpp */; };
@@ -747,6 +748,9 @@
 		C33CBF731891AE3800854F7A /* AndroidNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AndroidNative.h; path = ../Classes/NativeSupport/AndroidNative.h; sourceTree = "<group>"; };
 		C33CBF751891AEC600854F7A /* NativeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NativeManager.cpp; path = ../Classes/Manager/NativeManager.cpp; sourceTree = "<group>"; };
 		C33CBF761891AEC600854F7A /* NativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeManager.h; path = ../Classes/Manager/NativeManager.h; sourceTree = "<group>"; };
+		C33CBF801891B18100854F7A /* GamePlayManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamePlayManager.cpp; path = ../Classes/Manager/GamePlayManager.cpp; sourceTree = "<group>"; };
+		C33CBF811891B18100854F7A /* GamePlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayManager.h; path = ../Classes/Manager/GamePlayManager.h; sourceTree = "<group>"; };
+		C33CBF831891B30500854F7A /* CommonString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonString.h; path = ../Classes/Common/CommonString.h; sourceTree = "<group>"; };
 		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; };
 		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; };
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; };
@@ -760,7 +764,6 @@
 		C3BF2215189158AD00270D56 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/Scene/GameScene.cpp; sourceTree = "<group>"; };
 		C3BF2216189158AD00270D56 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/Scene/GameScene.h; sourceTree = "<group>"; };
 		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; };
-		C3BF221F1891783D00270D56 /* Commons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Commons.h; path = ../Classes/Common/Commons.h; sourceTree = "<group>"; };
 		D41A0AD0160F154A004552AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../proj.ios/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D446FD6D16102124000ADA7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../proj.ios/Default@2x.png"; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -1784,6 +1787,8 @@
 				C3BF2205189156FF00270D56 /* SceneManager.h */,
 				C33CBF751891AEC600854F7A /* NativeManager.cpp */,
 				C33CBF761891AEC600854F7A /* NativeManager.h */,
+				C33CBF801891B18100854F7A /* GamePlayManager.cpp */,
+				C33CBF811891B18100854F7A /* GamePlayManager.h */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -1818,7 +1823,7 @@
 			isa = PBXGroup;
 			children = (
 				C3BF221D1891656200270D56 /* CommonEnum.h */,
-				C3BF221F1891783D00270D56 /* Commons.h */,
+				C33CBF831891B30500854F7A /* CommonString.h */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -1992,6 +1997,7 @@
 				15A3D9AE1682F7F9002FB0C5 /* cpSpaceQuery.c in Sources */,
 				15A3D9AF1682F7F9002FB0C5 /* cpSpaceStep.c in Sources */,
 				15A3D9B01682F7F9002FB0C5 /* cpSpatialIndex.c in Sources */,
+				C33CBF821891B18100854F7A /* GamePlayManager.cpp in Sources */,
 				15A3D9B11682F7F9002FB0C5 /* cpSweep1D.c in Sources */,
 				15A3D9B21682F7F9002FB0C5 /* cpVect.c in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,

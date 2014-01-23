@@ -1,9 +1,9 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
 #include "SceneManager.h"
 #include "CommonEnum.h"
 #include "AppMacros.h"
 #include "NativeManager.h"
+#include "GamePlayManager.h"
 
 USING_NS_CC;
 
@@ -15,6 +15,7 @@ AppDelegate::~AppDelegate()
 {
     SceneManager::getInstance()->release();
     NativeManager::getInstance()->release();
+    GamePlayManager::getInstance()->release();
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
@@ -48,7 +49,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // run with scene
-    SceneManager::getInstance()->moveToScene(SceneSplash);
+    SceneManager::getInstance()->moveToScene(CommonEnum::eSceneGame);
 
     return true;
 }

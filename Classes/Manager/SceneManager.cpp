@@ -30,7 +30,7 @@ SceneManager::~SceneManager() {
 bool SceneManager::init() {
     return true;
 }
-void SceneManager::moveToScene(eSceneType sceneType,bool isReplace) {
+void SceneManager::moveToScene(CommonEnum::eSceneType sceneType,bool isReplace) {
     CCDirector* director = CCDirector::sharedDirector();
     CCScene* runningScene = director->getRunningScene();
     CCScene* newScene = getScene(sceneType);
@@ -47,15 +47,15 @@ void SceneManager::moveToScene(eSceneType sceneType,bool isReplace) {
     }
     
 }
-CCScene* SceneManager::getScene(eSceneType sceneType) {
+CCScene* SceneManager::getScene(CommonEnum::eSceneType sceneType) {
     switch (sceneType) {
-        case SceneSplash:
+        case CommonEnum::eSceneSplash:
             return SplashScene::scene();
-        case SceneTitle:
+        case CommonEnum::eSceneTitle:
             return TitleScene::scene();
-        case SceneHome:
+        case CommonEnum::eSceneHome:
             return HomeScene::scene();
-        case SceneGame:
+        case CommonEnum::eSceneGame:
             return GameScene::scene();
         default:
             CCAssert(true, "You must valid scene type.");
