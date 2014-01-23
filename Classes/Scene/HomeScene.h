@@ -13,9 +13,15 @@
 #include "iScene.h"
 
 class HomeScene : public iScene {
-public:
-    virtual bool init();
+private:
+    HomeScene();
+    virtual ~HomeScene();
     
+public:
+    static cocos2d::CCScene* scene();
+    
+private:
+    virtual bool init();
     CREATE_FUNC(HomeScene);
 };
 

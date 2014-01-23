@@ -11,16 +11,23 @@
 
 #include <iostream>
 #include "cocos2d.h"
-
+#include "CommonEnum.h"
 
 class SceneManager : cocos2d::CCObject {
+    friend class AppDelegate;
 private:
     SceneManager();
     virtual ~SceneManager();
+    cocos2d::CCScene* getScene(eSceneType sceneType);
     
 public:
+    static SceneManager* getInstance();
+    
     virtual bool init();
     CREATE_FUNC(SceneManager);
+    
+    void moveToScene(eSceneType sceneType, bool isReplace=false);
+    
 };
 
 #endif /* defined(__AniCrushSagaPang__SceneManager__) */

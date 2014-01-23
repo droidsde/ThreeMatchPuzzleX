@@ -1,5 +1,8 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "SceneManager.h"
+#include "CommonEnum.h"
+#include "AppMacros.h"
 
 USING_NS_CC;
 
@@ -9,6 +12,7 @@ AppDelegate::AppDelegate() {
 
 AppDelegate::~AppDelegate() 
 {
+    SceneManager::getInstance()->release();
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
@@ -20,15 +24,29 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	
     // turn on display FPS
     pDirector->setDisplayStats(true);
+    
+    pEGLView->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, kResolutionFixedHeight);
+    
+    std::vector<std::string> searchPath;
+    float ipadGap = (ipadResource.size.height - iphoneResource.size.height)/2;
+    CCSize frameSize = pEGLView->getFrameSize();
+    if( frameSize.height>(iphoneResource.size.height+ipadGap)) {
+        searchPath.push_back(ipadResource.directory);
+        pDirector->setContentScaleFactor(ipadResource.size.height/designResolutionSize.height);
+    }
+    else {
+        searchPath.push_back(iphoneResource.directory);
+        pDirector->setContentScaleFactor(iphoneResource.size.height/designResolutionSize.height);
+    }
+    
+    CCFileUtils::sharedFileUtils()->setSearchPaths(searchPath);
+
 
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
 
-    // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
-
-    // run
-    pDirector->runWithScene(pScene);
+    // run with scene
+    SceneManager::getInstance()->moveToScene(SceneSplash);
 
     return true;
 }

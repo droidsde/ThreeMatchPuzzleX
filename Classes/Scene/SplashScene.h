@@ -13,9 +13,15 @@
 #include "iScene.h"
 
 class SplashScene : public iScene {
-public:
-    virtual bool init();
+private:
+    SplashScene();
+    virtual ~SplashScene();
     
+public:
+    static cocos2d::CCScene* scene();
+    
+private:
+    virtual bool init();
     CREATE_FUNC(SplashScene);
 };
 

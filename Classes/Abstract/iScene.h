@@ -12,12 +12,16 @@
 #include <iostream>
 #include "cocos2d.h"
 
-class iScene : public cocos2d::CCScene {
+class iScene : public cocos2d::CCLayer {
+protected:
+    const char* sceneName;
+    
 protected:
     iScene();
-    ~iScene();
+    virtual ~iScene();
     
 public:
+    virtual bool init();
 };
 
 #endif /* defined(__AniCrushSagaPang__iScenes__) */

@@ -737,6 +737,7 @@
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C33CBF641891A5F100854F7A /* AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/MultipleResolution/AppMacros.h; sourceTree = "<group>"; };
 		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; };
 		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; };
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; };
@@ -750,6 +751,7 @@
 		C3BF2215189158AD00270D56 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/Scene/GameScene.cpp; sourceTree = "<group>"; };
 		C3BF2216189158AD00270D56 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/Scene/GameScene.h; sourceTree = "<group>"; };
 		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; };
+		C3BF221F1891783D00270D56 /* Commons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Commons.h; path = ../Classes/Common/Commons.h; sourceTree = "<group>"; };
 		D41A0AD0160F154A004552AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../proj.ios/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D446FD6D16102124000ADA7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../proj.ios/Default@2x.png"; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -1280,6 +1282,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C33CBF621891A59A00854F7A /* MultipleResolution */,
 				C3BF221B1891655000270D56 /* Common */,
 				C3BF220B1891586500270D56 /* Scene */,
 				C3BF22071891580400270D56 /* Abstract */,
@@ -1747,6 +1750,14 @@
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
+		C33CBF621891A59A00854F7A /* MultipleResolution */ = {
+			isa = PBXGroup;
+			children = (
+				C33CBF641891A5F100854F7A /* AppMacros.h */,
+			);
+			name = MultipleResolution;
+			sourceTree = "<group>";
+		};
 		C3BF2203189156E900270D56 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1784,6 +1795,7 @@
 			isa = PBXGroup;
 			children = (
 				C3BF221D1891656200270D56 /* CommonEnum.h */,
+				C3BF221F1891783D00270D56 /* Commons.h */,
 			);
 			name = Common;
 			sourceTree = "<group>";

@@ -13,7 +13,14 @@
 #include "iScene.h"
 
 class TitleScene : public iScene {
+private:
+    TitleScene();
+    virtual ~TitleScene();
+    
 public:
+    static cocos2d::CCScene* scene();
+    
+private:
     virtual bool init();
     CREATE_FUNC(TitleScene);
 };

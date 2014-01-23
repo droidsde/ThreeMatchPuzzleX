@@ -11,12 +11,12 @@
 
 #include <iostream>
 
-typedef eSceneType {
+typedef enum {
     SceneUnknown,
     SceneSplash,
     SceneTitle,
     SceneHome,
     SceneGame,
-};
+} eSceneType;
 
 #endif /* defined(__AniCrushSagaPang__CommonEnum__) */
