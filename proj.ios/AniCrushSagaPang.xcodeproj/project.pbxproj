@@ -237,6 +237,13 @@
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		C3BF2206189156FF00270D56 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2204189156FF00270D56 /* SceneManager.cpp */; };
+		C3BF220A1891583500270D56 /* iScenes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScenes.cpp */; };
+		C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF220C1891587F00270D56 /* SplashScene.cpp */; };
+		C3BF22111891589200270D56 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF220F1891589200270D56 /* TitleScene.cpp */; };
+		C3BF22141891589F00270D56 /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22121891589F00270D56 /* HomeScene.cpp */; };
+		C3BF2217189158AD00270D56 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2215189158AD00270D56 /* GameScene.cpp */; };
+		C3BF221A189158FA00270D56 /* AniCrushSagaPangScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2218189158FA00270D56 /* AniCrushSagaPangScene.cpp */; };
 		D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41A0AD0160F154A004552AE /* Default-568h@2x.png */; };
 		D446FD6E16102124000ADA7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD6D16102124000ADA7B /* Default@2x.png */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
@@ -731,6 +738,20 @@
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; };
+		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; };
+		C3BF22081891583500270D56 /* iScenes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iScenes.cpp; path = ../Classes/Abstract/iScenes.cpp; sourceTree = "<group>"; };
+		C3BF22091891583500270D56 /* iScenes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iScenes.h; path = ../Classes/Abstract/iScenes.h; sourceTree = "<group>"; };
+		C3BF220C1891587F00270D56 /* SplashScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SplashScene.cpp; path = ../Classes/Scene/SplashScene.cpp; sourceTree = "<group>"; };
+		C3BF220D1891587F00270D56 /* SplashScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashScene.h; path = ../Classes/Scene/SplashScene.h; sourceTree = "<group>"; };
+		C3BF220F1891589200270D56 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleScene.cpp; path = ../Classes/Scene/TitleScene.cpp; sourceTree = "<group>"; };
+		C3BF22101891589200270D56 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../Classes/Scene/TitleScene.h; sourceTree = "<group>"; };
+		C3BF22121891589F00270D56 /* HomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HomeScene.cpp; path = ../Classes/Scene/HomeScene.cpp; sourceTree = "<group>"; };
+		C3BF22131891589F00270D56 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScene.h; path = ../Classes/Scene/HomeScene.h; sourceTree = "<group>"; };
+		C3BF2215189158AD00270D56 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/Scene/GameScene.cpp; sourceTree = "<group>"; };
+		C3BF2216189158AD00270D56 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/Scene/GameScene.h; sourceTree = "<group>"; };
+		C3BF2218189158FA00270D56 /* AniCrushSagaPangScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AniCrushSagaPangScene.cpp; path = ../Classes/Scene/AniCrushSagaPangScene.cpp; sourceTree = "<group>"; };
+		C3BF2219189158FA00270D56 /* AniCrushSagaPangScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AniCrushSagaPangScene.h; path = ../Classes/Scene/AniCrushSagaPangScene.h; sourceTree = "<group>"; };
 		D41A0AD0160F154A004552AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../proj.ios/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D446FD6D16102124000ADA7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../proj.ios/Default@2x.png"; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -1261,6 +1282,9 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C3BF220B1891586500270D56 /* Scene */,
+				C3BF22071891580400270D56 /* Abstract */,
+				C3BF2203189156E900270D56 /* Manager */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
@@ -1724,6 +1748,41 @@
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
+		C3BF2203189156E900270D56 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF2204189156FF00270D56 /* SceneManager.cpp */,
+				C3BF2205189156FF00270D56 /* SceneManager.h */,
+				C3BF2218189158FA00270D56 /* AniCrushSagaPangScene.cpp */,
+				C3BF2219189158FA00270D56 /* AniCrushSagaPangScene.h */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C3BF22071891580400270D56 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF22081891583500270D56 /* iScenes.cpp */,
+				C3BF22091891583500270D56 /* iScenes.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		C3BF220B1891586500270D56 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF220C1891587F00270D56 /* SplashScene.cpp */,
+				C3BF220D1891587F00270D56 /* SplashScene.h */,
+				C3BF220F1891589200270D56 /* TitleScene.cpp */,
+				C3BF22101891589200270D56 /* TitleScene.h */,
+				C3BF22121891589F00270D56 /* HomeScene.cpp */,
+				C3BF22131891589F00270D56 /* HomeScene.h */,
+				C3BF2215189158AD00270D56 /* GameScene.cpp */,
+				C3BF2216189158AD00270D56 /* GameScene.h */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1865,6 +1924,7 @@
 				15A3D9391682F7D5002FB0C5 /* b2Rope.cpp in Sources */,
 				15A3D9951682F7F9002FB0C5 /* chipmunk.c in Sources */,
 				15A3D9971682F7F9002FB0C5 /* cpConstraint.c in Sources */,
+				C3BF22111891589200270D56 /* TitleScene.cpp in Sources */,
 				15A3D9981682F7F9002FB0C5 /* cpDampedRotarySpring.c in Sources */,
 				15A3D9991682F7F9002FB0C5 /* cpDampedSpring.c in Sources */,
 				15A3D99A1682F7F9002FB0C5 /* cpGearJoint.c in Sources */,
@@ -1876,6 +1936,7 @@
 				15A3D9A01682F7F9002FB0C5 /* cpSimpleMotor.c in Sources */,
 				15A3D9A11682F7F9002FB0C5 /* cpSlideJoint.c in Sources */,
 				15A3D9A21682F7F9002FB0C5 /* cpArbiter.c in Sources */,
+				C3BF221A189158FA00270D56 /* AniCrushSagaPangScene.cpp in Sources */,
 				15A3D9A31682F7F9002FB0C5 /* cpArray.c in Sources */,
 				15A3D9A41682F7F9002FB0C5 /* cpBB.c in Sources */,
 				15A3D9A51682F7F9002FB0C5 /* cpBBTree.c in Sources */,
@@ -1910,6 +1971,7 @@
 				15A3DA401682F826002FB0C5 /* CCMenuItemImageLoader.cpp in Sources */,
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,
 				15A3DA421682F826002FB0C5 /* CCNode+CCBRelativePositioning.cpp in Sources */,
+				C3BF2206189156FF00270D56 /* SceneManager.cpp in Sources */,
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
@@ -1945,6 +2007,7 @@
 				1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
+				C3BF22141891589F00270D56 /* HomeScene.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
@@ -1958,6 +2021,7 @@
 				1A8F3B75175E05DA00049216 /* Bone.cpp in Sources */,
 				1A8F3B76175E05DA00049216 /* BoneData.cpp in Sources */,
 				1A8F3B77175E05DA00049216 /* CCSkeleton.cpp in Sources */,
+				C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */,
 				1A8F3B78175E05DA00049216 /* CCSkeletonAnimation.cpp in Sources */,
 				1A8F3B79175E05DA00049216 /* extension.cpp in Sources */,
 				1A8F3B7A175E05DA00049216 /* Json.cpp in Sources */,
@@ -1975,6 +2039,7 @@
 				379BB99617F03F3700829B88 /* CCActionFrameEasing.cpp in Sources */,
 				379BB99717F03F3700829B88 /* CCActionManager.cpp in Sources */,
 				379BB99817F03F3700829B88 /* CCActionNode.cpp in Sources */,
+				C3BF220A1891583500270D56 /* iScenes.cpp in Sources */,
 				379BB99917F03F3700829B88 /* CCActionObject.cpp in Sources */,
 				379BB99A17F03F3700829B88 /* CCArmatureAnimation.cpp in Sources */,
 				379BB99B17F03F3700829B88 /* CCProcessBase.cpp in Sources */,
@@ -2029,6 +2094,7 @@
 				379BB9CF17F03F3700829B88 /* json_value.cpp in Sources */,
 				379BB9D117F03F3700829B88 /* json_writer.cpp in Sources */,
 				379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */,
+				C3BF2217189158AD00270D56 /* GameScene.cpp in Sources */,
 				379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
