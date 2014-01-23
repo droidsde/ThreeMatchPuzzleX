@@ -237,6 +237,10 @@
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		C33CBF6B1891ADB200854F7A /* iOSNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF691891ADB200854F7A /* iOSNative.cpp */; };
+		C33CBF711891AE2200854F7A /* iNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF6F1891AE2200854F7A /* iNative.cpp */; };
+		C33CBF741891AE3800854F7A /* AndroidNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF721891AE3800854F7A /* AndroidNative.cpp */; };
+		C33CBF771891AEC600854F7A /* NativeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF751891AEC600854F7A /* NativeManager.cpp */; };
 		C3BF2206189156FF00270D56 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2204189156FF00270D56 /* SceneManager.cpp */; };
 		C3BF220A1891583500270D56 /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScene.cpp */; };
 		C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF220C1891587F00270D56 /* SplashScene.cpp */; };
@@ -738,6 +742,14 @@
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C33CBF641891A5F100854F7A /* AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/MultipleResolution/AppMacros.h; sourceTree = "<group>"; };
+		C33CBF691891ADB200854F7A /* iOSNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iOSNative.cpp; path = ../Classes/NativeSupport/iOSNative.cpp; sourceTree = "<group>"; };
+		C33CBF6A1891ADB200854F7A /* iOSNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSNative.h; path = ../Classes/NativeSupport/iOSNative.h; sourceTree = "<group>"; };
+		C33CBF6F1891AE2200854F7A /* iNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iNative.cpp; path = ../Classes/Abstract/iNative.cpp; sourceTree = "<group>"; };
+		C33CBF701891AE2200854F7A /* iNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iNative.h; path = ../Classes/Abstract/iNative.h; sourceTree = "<group>"; };
+		C33CBF721891AE3800854F7A /* AndroidNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AndroidNative.cpp; path = ../Classes/NativeSupport/AndroidNative.cpp; sourceTree = "<group>"; };
+		C33CBF731891AE3800854F7A /* AndroidNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AndroidNative.h; path = ../Classes/NativeSupport/AndroidNative.h; sourceTree = "<group>"; };
+		C33CBF751891AEC600854F7A /* NativeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NativeManager.cpp; path = ../Classes/Manager/NativeManager.cpp; sourceTree = "<group>"; };
+		C33CBF761891AEC600854F7A /* NativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeManager.h; path = ../Classes/Manager/NativeManager.h; sourceTree = "<group>"; };
 		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; };
 		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; };
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; };
@@ -1282,6 +1294,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C33CBF651891AD4200854F7A /* NativeSupport */,
 				C33CBF621891A59A00854F7A /* MultipleResolution */,
 				C3BF221B1891655000270D56 /* Common */,
 				C3BF220B1891586500270D56 /* Scene */,
@@ -1758,11 +1771,24 @@
 			name = MultipleResolution;
 			sourceTree = "<group>";
 		};
+		C33CBF651891AD4200854F7A /* NativeSupport */ = {
+			isa = PBXGroup;
+			children = (
+				C33CBF691891ADB200854F7A /* iOSNative.cpp */,
+				C33CBF6A1891ADB200854F7A /* iOSNative.h */,
+				C33CBF721891AE3800854F7A /* AndroidNative.cpp */,
+				C33CBF731891AE3800854F7A /* AndroidNative.h */,
+			);
+			name = NativeSupport;
+			sourceTree = "<group>";
+		};
 		C3BF2203189156E900270D56 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				C3BF2204189156FF00270D56 /* SceneManager.cpp */,
 				C3BF2205189156FF00270D56 /* SceneManager.h */,
+				C33CBF751891AEC600854F7A /* NativeManager.cpp */,
+				C33CBF761891AEC600854F7A /* NativeManager.h */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -1770,6 +1796,8 @@
 		C3BF22071891580400270D56 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				C33CBF6F1891AE2200854F7A /* iNative.cpp */,
+				C33CBF701891AE2200854F7A /* iNative.h */,
 				C3BF22081891583500270D56 /* iScene.cpp */,
 				C3BF22091891583500270D56 /* iScene.h */,
 			);
@@ -1926,6 +1954,7 @@
 				15A3D91C1682F7D5002FB0C5 /* b2EdgeAndCircleContact.cpp in Sources */,
 				15A3D91D1682F7D5002FB0C5 /* b2EdgeAndPolygonContact.cpp in Sources */,
 				15A3D91E1682F7D5002FB0C5 /* b2PolygonAndCircleContact.cpp in Sources */,
+				C33CBF6B1891ADB200854F7A /* iOSNative.cpp in Sources */,
 				15A3D91F1682F7D5002FB0C5 /* b2PolygonContact.cpp in Sources */,
 				15A3D9201682F7D5002FB0C5 /* b2DistanceJoint.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
@@ -1933,6 +1962,7 @@
 				15A3D9231682F7D5002FB0C5 /* b2Joint.cpp in Sources */,
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,
 				15A3D9251682F7D5002FB0C5 /* b2PrismaticJoint.cpp in Sources */,
+				C33CBF771891AEC600854F7A /* NativeManager.cpp in Sources */,
 				15A3D9261682F7D5002FB0C5 /* b2PulleyJoint.cpp in Sources */,
 				15A3D9271682F7D5002FB0C5 /* b2RevoluteJoint.cpp in Sources */,
 				15A3D9281682F7D5002FB0C5 /* b2RopeJoint.cpp in Sources */,
@@ -2025,6 +2055,7 @@
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
 				C3BF22141891589F00270D56 /* HomeScene.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
+				C33CBF711891AE2200854F7A /* iNative.cpp in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
 				1A8F3B6E175E05DA00049216 /* Animation.cpp in Sources */,
@@ -2107,6 +2138,7 @@
 				379BB9CB17F03F3700829B88 /* DictionaryHelper.cpp in Sources */,
 				ED35BF4C183230FC002A0750 /* UIListViewEx.cpp in Sources */,
 				379BB9CE17F03F3700829B88 /* json_reader.cpp in Sources */,
+				C33CBF741891AE3800854F7A /* AndroidNative.cpp in Sources */,
 				379BB9CF17F03F3700829B88 /* json_value.cpp in Sources */,
 				379BB9D117F03F3700829B88 /* json_writer.cpp in Sources */,
 				379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */,

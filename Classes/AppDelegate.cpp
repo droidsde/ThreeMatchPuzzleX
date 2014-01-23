@@ -3,6 +3,7 @@
 #include "SceneManager.h"
 #include "CommonEnum.h"
 #include "AppMacros.h"
+#include "NativeManager.h"
 
 USING_NS_CC;
 
@@ -13,6 +14,7 @@ AppDelegate::AppDelegate() {
 AppDelegate::~AppDelegate() 
 {
     SceneManager::getInstance()->release();
+    NativeManager::getInstance()->release();
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
