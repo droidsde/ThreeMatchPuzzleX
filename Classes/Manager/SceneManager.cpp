@@ -19,6 +19,7 @@ SceneManager* pInstance = NULL;
 SceneManager* SceneManager::getInstance() {
     if( pInstance==NULL ) {
         pInstance = SceneManager::create();
+        pInstance->retain();
     }
     return pInstance;
 }

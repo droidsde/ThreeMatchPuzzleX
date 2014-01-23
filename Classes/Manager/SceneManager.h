@@ -18,12 +18,12 @@ class SceneManager : cocos2d::CCObject {
 private:
     SceneManager();
     virtual ~SceneManager();
+    virtual bool init();
+    
     cocos2d::CCScene* getScene(eSceneType sceneType);
     
 public:
     static SceneManager* getInstance();
-    
-    virtual bool init();
     CREATE_FUNC(SceneManager);
     
     void moveToScene(eSceneType sceneType, bool isReplace=false);

@@ -10,8 +10,10 @@
 
 static NativeManager* pInstance = NULL;
 NativeManager* NativeManager::getInstance() {
-    if( pInstance==NULL )
+    if( pInstance==NULL ) {
         pInstance = NativeManager::create();
+        pInstance->retain();
+    }
     
     return pInstance;
 }
