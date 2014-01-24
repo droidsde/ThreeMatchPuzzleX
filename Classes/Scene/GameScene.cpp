@@ -7,11 +7,13 @@
 //
 
 #include "GameScene.h"
+#include "CommonValue.h"
 
 USING_NS_CC;
 
 GameScene::GameScene() {
-    sceneName = "Game Scene";
+//    sceneName = "Game Scene";
+    sceneName = CommonValue::getVersionString();
 }
 GameScene::~GameScene() {
 }
