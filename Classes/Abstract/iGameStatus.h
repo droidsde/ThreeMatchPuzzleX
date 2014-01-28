@@ -21,9 +21,9 @@ protected:
     CommonEnum::GameStatus gameStatus = CommonEnum::eGameStatusUnknown;
     
 public:
-    void Start();
-    void Pause();
-    void End();
+    virtual void Start();
+    virtual void Pause();
+    virtual void End();
 };
 
 #endif /* defined(__AniCrushSagaPang__iGameStatus__) */

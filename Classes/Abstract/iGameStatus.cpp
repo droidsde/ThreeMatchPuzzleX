@@ -11,6 +11,11 @@
 iGameStatus::iGameStatus(CommonEnum::GameStatus status) {
     gameStatus = status;
 }
-
 iGameStatus::~iGameStatus() {
+}
+void iGameStatus::Start() {
+}
+void iGameStatus::Pause() {
+}
+void iGameStatus::End() {
 }
