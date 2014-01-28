@@ -1,1 +1,1 @@
-Cocos2d-x로 퍼즐 게임을 개발하는 프로젝트입니다.
+Three Match Puzzle Game with Cocos2d-x.
