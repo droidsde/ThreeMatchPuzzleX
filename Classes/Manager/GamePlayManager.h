@@ -15,6 +15,7 @@
 
 class GamePlayManager : public cocos2d::CCObject {
     friend class AppDelegate;
+    
 private:
     GamePlayManager();
     virtual ~GamePlayManager();
@@ -23,6 +24,7 @@ private:
 public:
     static GamePlayManager* getInstance();
     CREATE_FUNC(GamePlayManager);
+    
 };
 
 #endif /* defined(__AniCrushSagaPang__GamePlayManager__) */

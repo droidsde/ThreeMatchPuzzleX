@@ -27,6 +27,21 @@ namespace CommonEnum {
         ePlatformAndroid,
     } PlatformType;
     
+    typedef enum {
+        eBlockUnknown,
+        eBlockNormal,
+    } BlockType;
+    
+    typedef enum {
+        eGameStatusUnknown,
+        eGameStatusInit,
+        eGameStatusStart,
+        eGameStatusPlay,
+        eGameStatusPause,
+        eGameStatusResult,
+        eGameStatusExit,
+    } GameStatus;
+    
 };
 
 #endif /* defined(__AniCrushSagaPang__CommonEnum__) */

@@ -8,6 +8,7 @@
 
 #include "GameScene.h"
 #include "CommonValue.h"
+#include "GamePlayManager.h"
 
 USING_NS_CC;
 
@@ -20,6 +21,9 @@ GameScene::~GameScene() {
 bool GameScene::init() {
     if( !iScene::init() )
         return false;
+    
+    GamePlayManager* gamePlayManager = GamePlayManager::getInstance();
+    
     return true;
 }
 CCScene* GameScene::scene() {
