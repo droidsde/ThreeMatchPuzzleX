@@ -33,14 +33,14 @@ namespace CommonEnum {
     } BlockType;
     
     typedef enum {
-        eGameStatusUnknown,
-        eGameStatusInit,
-        eGameStatusStart,
-        eGameStatusPlay,
-        eGameStatusPause,
-        eGameStatusResult,
-        eGameStatusExit,
-    } GameStatus;
+        eGameStateUnknown,
+        eGameStateInit,
+        eGameStateStart,
+        eGameStatePlay,
+        eGameStatePause,
+        eGameStateResult,
+        eGameStateExit,
+    } GameState;
     
 };
 
