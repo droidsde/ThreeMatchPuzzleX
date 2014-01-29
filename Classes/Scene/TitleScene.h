@@ -1,13 +1,13 @@
 //
 //  TitleScene.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 23..
 //
 //
 
-#ifndef __AniCrushSagaPang__TitleScene__
-#define __AniCrushSagaPang__TitleScene__
+#ifndef __ThreeMatchPuzzleX__TitleScene__
+#define __ThreeMatchPuzzleX__TitleScene__
 
 #include <iostream>
 #include "iScene.h"
@@ -25,4 +25,4 @@ private:
     CREATE_FUNC(TitleScene);
 };
 
-#endif /* defined(__AniCrushSagaPang__TitleScene__) */
+#endif /* defined(__ThreeMatchPuzzleX__TitleScene__) */

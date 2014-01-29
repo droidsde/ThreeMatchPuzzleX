@@ -1,13 +1,13 @@
 //
 //  SceneManager.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 23..
 //
 //
 
-#ifndef __AniCrushSagaPang__SceneManager__
-#define __AniCrushSagaPang__SceneManager__
+#ifndef __ThreeMatchPuzzleX__SceneManager__
+#define __ThreeMatchPuzzleX__SceneManager__
 
 #include <iostream>
 #include "cocos2d.h"
@@ -30,4 +30,4 @@ public:
     
 };
 
-#endif /* defined(__AniCrushSagaPang__SceneManager__) */
+#endif /* defined(__ThreeMatchPuzzleX__SceneManager__) */

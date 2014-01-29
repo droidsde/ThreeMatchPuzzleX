@@ -1,13 +1,13 @@
 //
 //  iBlock.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 25..
 //
 //
 
-#ifndef __AniCrushSagaPang__iBlock__
-#define __AniCrushSagaPang__iBlock__
+#ifndef __ThreeMatchPuzzleX__iBlock__
+#define __ThreeMatchPuzzleX__iBlock__
 
 #include <iostream>
 #include "cocos2d.h"
@@ -20,4 +20,4 @@ class iSpecialBlock : iBlock {
 public:
 };
 
-#endif /* defined(__AniCrushSagaPang__iBlock__) */
+#endif /* defined(__ThreeMatchPuzzleX__iBlock__) */

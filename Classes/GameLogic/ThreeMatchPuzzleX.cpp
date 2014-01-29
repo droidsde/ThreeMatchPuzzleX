@@ -1,12 +1,12 @@
 //
-//  AniCrushSagaPang.cpp
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX.cpp
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 27..
 //
 //
 
-#include "AniCrushSagaPang.h"
+#include "ThreeMatchPuzzleX.h"
 #include "CommonEnum.h"
 
 //eGameStatusInit,

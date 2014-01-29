@@ -244,7 +244,7 @@
 		C33CBF881892E21400854F7A /* iBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF861892E21400854F7A /* iBlock.cpp */; };
 		C33CBF8B1892E24C00854F7A /* Blocks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF891892E24C00854F7A /* Blocks.cpp */; };
 		C3615F8418969E4C009C0378 /* iGameStatus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3615F8218969E4C009C0378 /* iGameStatus.cpp */; };
-		C3615F8818969EA4009C0378 /* AniCrushSagaPang.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3615F8618969EA4009C0378 /* AniCrushSagaPang.cpp */; };
+		C3615F8818969EA4009C0378 /* ThreeMatchPuzzleX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3615F8618969EA4009C0378 /* ThreeMatchPuzzleX.cpp */; };
 		C3BF2206189156FF00270D56 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2204189156FF00270D56 /* SceneManager.cpp */; };
 		C3BF220A1891583500270D56 /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScene.cpp */; };
 		C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF220C1891587F00270D56 /* SplashScene.cpp */; };
@@ -744,38 +744,38 @@
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C33CBF641891A5F100854F7A /* AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/MultipleResolution/AppMacros.h; sourceTree = "<group>"; };
-		C33CBF691891ADB200854F7A /* iOSNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iOSNative.cpp; path = ../Classes/NativeSupport/iOSNative.cpp; sourceTree = "<group>"; };
-		C33CBF6A1891ADB200854F7A /* iOSNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSNative.h; path = ../Classes/NativeSupport/iOSNative.h; sourceTree = "<group>"; };
-		C33CBF6F1891AE2200854F7A /* iNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iNative.cpp; path = ../Classes/Abstract/iNative.cpp; sourceTree = "<group>"; };
-		C33CBF701891AE2200854F7A /* iNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iNative.h; path = ../Classes/Abstract/iNative.h; sourceTree = "<group>"; };
-		C33CBF721891AE3800854F7A /* AndroidNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AndroidNative.cpp; path = ../Classes/NativeSupport/AndroidNative.cpp; sourceTree = "<group>"; };
-		C33CBF731891AE3800854F7A /* AndroidNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AndroidNative.h; path = ../Classes/NativeSupport/AndroidNative.h; sourceTree = "<group>"; };
-		C33CBF751891AEC600854F7A /* NativeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NativeManager.cpp; path = ../Classes/Manager/NativeManager.cpp; sourceTree = "<group>"; };
-		C33CBF761891AEC600854F7A /* NativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeManager.h; path = ../Classes/Manager/NativeManager.h; sourceTree = "<group>"; };
-		C33CBF801891B18100854F7A /* GamePlayManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamePlayManager.cpp; path = ../Classes/Manager/GamePlayManager.cpp; sourceTree = "<group>"; };
-		C33CBF811891B18100854F7A /* GamePlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayManager.h; path = ../Classes/Manager/GamePlayManager.h; sourceTree = "<group>"; };
-		C33CBF841891B66900854F7A /* CommonValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonValue.h; path = ../Classes/Common/CommonValue.h; sourceTree = "<group>"; };
-		C33CBF861892E21400854F7A /* iBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iBlock.cpp; path = ../Classes/Abstract/iBlock.cpp; sourceTree = "<group>"; };
-		C33CBF871892E21400854F7A /* iBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBlock.h; path = ../Classes/Abstract/iBlock.h; sourceTree = "<group>"; };
-		C33CBF891892E24C00854F7A /* Blocks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Blocks.cpp; path = ../Classes/Block/Blocks.cpp; sourceTree = "<group>"; };
-		C33CBF8A1892E24C00854F7A /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Blocks.h; path = ../Classes/Block/Blocks.h; sourceTree = "<group>"; };
-		C3615F8218969E4C009C0378 /* iGameStatus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iGameStatus.cpp; path = ../Classes/Abstract/iGameStatus.cpp; sourceTree = "<group>"; };
-		C3615F8318969E4C009C0378 /* iGameStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iGameStatus.h; path = ../Classes/Abstract/iGameStatus.h; sourceTree = "<group>"; };
-		C3615F8618969EA4009C0378 /* AniCrushSagaPang.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AniCrushSagaPang.cpp; path = ../Classes/GameLogic/AniCrushSagaPang.cpp; sourceTree = "<group>"; };
-		C3615F8718969EA4009C0378 /* AniCrushSagaPang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AniCrushSagaPang.h; path = ../Classes/GameLogic/AniCrushSagaPang.h; sourceTree = "<group>"; };
-		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; };
-		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; };
-		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; };
-		C3BF22091891583500270D56 /* iScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iScene.h; path = ../Classes/Abstract/iScene.h; sourceTree = "<group>"; };
+		C33CBF691891ADB200854F7A /* iOSNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iOSNative.cpp; path = ../Classes/NativeSupport/iOSNative.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C33CBF6A1891ADB200854F7A /* iOSNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iOSNative.h; path = ../Classes/NativeSupport/iOSNative.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C33CBF6F1891AE2200854F7A /* iNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iNative.cpp; path = ../Classes/Abstract/iNative.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C33CBF701891AE2200854F7A /* iNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iNative.h; path = ../Classes/Abstract/iNative.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C33CBF721891AE3800854F7A /* AndroidNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = AndroidNative.cpp; path = ../Classes/NativeSupport/AndroidNative.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C33CBF731891AE3800854F7A /* AndroidNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AndroidNative.h; path = ../Classes/NativeSupport/AndroidNative.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C33CBF751891AEC600854F7A /* NativeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = NativeManager.cpp; path = ../Classes/Manager/NativeManager.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C33CBF761891AEC600854F7A /* NativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = NativeManager.h; path = ../Classes/Manager/NativeManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C33CBF801891B18100854F7A /* GamePlayManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = GamePlayManager.cpp; path = ../Classes/Manager/GamePlayManager.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C33CBF811891B18100854F7A /* GamePlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GamePlayManager.h; path = ../Classes/Manager/GamePlayManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C33CBF841891B66900854F7A /* CommonValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CommonValue.h; path = ../Classes/Common/CommonValue.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C33CBF861892E21400854F7A /* iBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iBlock.cpp; path = ../Classes/Abstract/iBlock.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C33CBF871892E21400854F7A /* iBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iBlock.h; path = ../Classes/Abstract/iBlock.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C33CBF891892E24C00854F7A /* Blocks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = Blocks.cpp; path = ../Classes/Block/Blocks.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C33CBF8A1892E24C00854F7A /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Blocks.h; path = ../Classes/Block/Blocks.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C3615F8218969E4C009C0378 /* iGameStatus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iGameStatus.cpp; path = ../Classes/Abstract/iGameStatus.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C3615F8318969E4C009C0378 /* iGameStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iGameStatus.h; path = ../Classes/Abstract/iGameStatus.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C3615F8618969EA4009C0378 /* ThreeMatchPuzzleX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreeMatchPuzzleX.cpp; path = ../Classes/GameLogic/ThreeMatchPuzzleX.cpp; sourceTree = "<group>"; };
+		C3615F8718969EA4009C0378 /* ThreeMatchPuzzleX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeMatchPuzzleX.h; path = ../Classes/GameLogic/ThreeMatchPuzzleX.h; sourceTree = "<group>"; };
+		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C3BF22091891583500270D56 /* iScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iScene.h; path = ../Classes/Abstract/iScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C3BF220C1891587F00270D56 /* SplashScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SplashScene.cpp; path = ../Classes/Scene/SplashScene.cpp; sourceTree = "<group>"; };
 		C3BF220D1891587F00270D56 /* SplashScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashScene.h; path = ../Classes/Scene/SplashScene.h; sourceTree = "<group>"; };
 		C3BF220F1891589200270D56 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleScene.cpp; path = ../Classes/Scene/TitleScene.cpp; sourceTree = "<group>"; };
 		C3BF22101891589200270D56 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../Classes/Scene/TitleScene.h; sourceTree = "<group>"; };
-		C3BF22121891589F00270D56 /* HomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HomeScene.cpp; path = ../Classes/Scene/HomeScene.cpp; sourceTree = "<group>"; };
-		C3BF22131891589F00270D56 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScene.h; path = ../Classes/Scene/HomeScene.h; sourceTree = "<group>"; };
-		C3BF2215189158AD00270D56 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/Scene/GameScene.cpp; sourceTree = "<group>"; };
-		C3BF2216189158AD00270D56 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/Scene/GameScene.h; sourceTree = "<group>"; };
-		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; };
+		C3BF22121891589F00270D56 /* HomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = HomeScene.cpp; path = ../Classes/Scene/HomeScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C3BF22131891589F00270D56 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = HomeScene.h; path = ../Classes/Scene/HomeScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C3BF2215189158AD00270D56 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = GameScene.cpp; path = ../Classes/Scene/GameScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		C3BF2216189158AD00270D56 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GameScene.h; path = ../Classes/Scene/GameScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		D41A0AD0160F154A004552AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../proj.ios/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D446FD6D16102124000ADA7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../proj.ios/Default@2x.png"; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -1806,8 +1806,8 @@
 		C3615F8518969E67009C0378 /* GameLogic */ = {
 			isa = PBXGroup;
 			children = (
-				C3615F8618969EA4009C0378 /* AniCrushSagaPang.cpp */,
-				C3615F8718969EA4009C0378 /* AniCrushSagaPang.h */,
+				C3615F8618969EA4009C0378 /* ThreeMatchPuzzleX.cpp */,
+				C3615F8718969EA4009C0378 /* ThreeMatchPuzzleX.h */,
 			);
 			name = GameLogic;
 			sourceTree = "<group>";
@@ -1964,7 +1964,7 @@
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
-				C3615F8818969EA4009C0378 /* AniCrushSagaPang.cpp in Sources */,
+				C3615F8818969EA4009C0378 /* ThreeMatchPuzzleX.cpp in Sources */,
 				15A3D9051682F7D5002FB0C5 /* b2DynamicTree.cpp in Sources */,
 				15A3D9061682F7D5002FB0C5 /* b2TimeOfImpact.cpp in Sources */,
 				15A3D9071682F7D5002FB0C5 /* b2ChainShape.cpp in Sources */,

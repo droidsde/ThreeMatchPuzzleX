@@ -1,13 +1,13 @@
 //
 //  AndroidNative.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 24..
 //
 //
 
-#ifndef __AniCrushSagaPang__AndroidNative__
-#define __AniCrushSagaPang__AndroidNative__
+#ifndef __ThreeMatchPuzzleX__AndroidNative__
+#define __ThreeMatchPuzzleX__AndroidNative__
 
 #include <iostream>
 #include "iNative.h"
@@ -18,4 +18,4 @@ public:
     virtual ~AndroidNative();
 };
 
-#endif /* defined(__AniCrushSagaPang__AndroidNative__) */
+#endif /* defined(__ThreeMatchPuzzleX__AndroidNative__) */

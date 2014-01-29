@@ -1,13 +1,13 @@
 //
 //  CommonEnum.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 23..
 //
 //
 
-#ifndef __AniCrushSagaPang__CommonEnum__
-#define __AniCrushSagaPang__CommonEnum__
+#ifndef __ThreeMatchPuzzleX__CommonEnum__
+#define __ThreeMatchPuzzleX__CommonEnum__
 
 #include <iostream>
 
@@ -44,4 +44,4 @@ namespace CommonEnum {
     
 };
 
-#endif /* defined(__AniCrushSagaPang__CommonEnum__) */
+#endif /* defined(__ThreeMatchPuzzleX__CommonEnum__) */

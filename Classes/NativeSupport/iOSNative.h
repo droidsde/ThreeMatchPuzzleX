@@ -1,13 +1,13 @@
 //
 //  iOSNative.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 24..
 //
 //
 
-#ifndef __AniCrushSagaPang__iOSNative__
-#define __AniCrushSagaPang__iOSNative__
+#ifndef __ThreeMatchPuzzleX__iOSNative__
+#define __ThreeMatchPuzzleX__iOSNative__
 
 #include <iostream>
 #include "iNative.h"
@@ -18,4 +18,4 @@ public:
     virtual ~iOSNative();
 };
 
-#endif /* defined(__AniCrushSagaPang__iOSNative__) */
+#endif /* defined(__ThreeMatchPuzzleX__iOSNative__) */

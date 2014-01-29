@@ -1,13 +1,13 @@
 //
 //  SplashScene.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 23..
 //
 //
 
-#ifndef __AniCrushSagaPang__SplashScene__
-#define __AniCrushSagaPang__SplashScene__
+#ifndef __ThreeMatchPuzzleX__SplashScene__
+#define __ThreeMatchPuzzleX__SplashScene__
 
 #include <iostream>
 #include "iScene.h"
@@ -25,4 +25,4 @@ private:
     CREATE_FUNC(SplashScene);
 };
 
-#endif /* defined(__AniCrushSagaPang__SplashScene__) */
+#endif /* defined(__ThreeMatchPuzzleX__SplashScene__) */

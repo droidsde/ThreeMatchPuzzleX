@@ -1,13 +1,13 @@
 //
 //  iNative.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 24..
 //
 //
 
-#ifndef __AniCrushSagaPang__iNative__
-#define __AniCrushSagaPang__iNative__
+#ifndef __ThreeMatchPuzzleX__iNative__
+#define __ThreeMatchPuzzleX__iNative__
 
 #include <iostream>
 
@@ -18,4 +18,4 @@ public:
     
 };
 
-#endif /* defined(__AniCrushSagaPang__iNative__) */
+#endif /* defined(__ThreeMatchPuzzleX__iNative__) */

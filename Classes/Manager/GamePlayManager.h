@@ -1,13 +1,13 @@
 //
 //  GamePlayManager.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 24..
 //
 //
 
-#ifndef __AniCrushSagaPang__GamePlayManager__
-#define __AniCrushSagaPang__GamePlayManager__
+#ifndef __ThreeMatchPuzzleX__GamePlayManager__
+#define __ThreeMatchPuzzleX__GamePlayManager__
 
 #include <iostream>
 #include "cocos2d.h"
@@ -27,4 +27,4 @@ public:
     
 };
 
-#endif /* defined(__AniCrushSagaPang__GamePlayManager__) */
+#endif /* defined(__ThreeMatchPuzzleX__GamePlayManager__) */

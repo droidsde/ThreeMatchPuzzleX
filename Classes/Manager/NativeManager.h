@@ -1,13 +1,13 @@
 //
 //  NativeManager.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 24..
 //
 //
 
-#ifndef __AniCrushSagaPang__NativeManager__
-#define __AniCrushSagaPang__NativeManager__
+#ifndef __ThreeMatchPuzzleX__NativeManager__
+#define __ThreeMatchPuzzleX__NativeManager__
 
 #include <iostream>
 #include "cocos2d.h"
@@ -27,4 +27,4 @@ public:
     CREATE_FUNC(NativeManager);
 };
 
-#endif /* defined(__AniCrushSagaPang__NativeManager__) */
+#endif /* defined(__ThreeMatchPuzzleX__NativeManager__) */

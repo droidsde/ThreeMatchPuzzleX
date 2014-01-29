@@ -1,13 +1,13 @@
 //
-//  AniCrushSagaPang.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX.h
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 27..
 //
 //
 
-#ifndef __AniCrushSagaPang__AniCrushSagaPang__
-#define __AniCrushSagaPang__AniCrushSagaPang__
+#ifndef __ThreeMatchPuzzleX__ThreeMatchPuzzleX__
+#define __ThreeMatchPuzzleX__ThreeMatchPuzzleX__
 
 #include <iostream>
 #include "iGameStatus.h"
@@ -79,4 +79,4 @@ public:
     virtual void End();
 };
 
-#endif /* defined(__AniCrushSagaPang__AniCrushSagaPang__) */
+#endif /* defined(__ThreeMatchPuzzleX__ThreeMatchPuzzleX__) */

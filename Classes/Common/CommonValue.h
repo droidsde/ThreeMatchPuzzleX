@@ -1,13 +1,13 @@
 //
 //  CommonValue.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 24..
 //
 //
 
-#ifndef AniCrushSagaPang_CommonValue_h
-#define AniCrushSagaPang_CommonValue_h
+#ifndef ThreeMatchPuzzleX_CommonValue_h
+#define ThreeMatchPuzzleX_CommonValue_h
 
 #include "CommonEnum.h"
 #include <stdio.h>

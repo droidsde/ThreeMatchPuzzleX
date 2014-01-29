@@ -1,13 +1,13 @@
 //
 //  iGameStatus.h
-//  AniCrushSagaPang
+//  ThreeMatchPuzzleX
 //
 //  Created by Cody on 2014. 1. 27..
 //
 //
 
-#ifndef __AniCrushSagaPang__iGameStatus__
-#define __AniCrushSagaPang__iGameStatus__
+#ifndef __ThreeMatchPuzzleX__iGameStatus__
+#define __ThreeMatchPuzzleX__iGameStatus__
 
 #include <iostream>
 #include "cocos2d.h"
@@ -26,4 +26,4 @@ public:
     virtual void End();
 };
 
-#endif /* defined(__AniCrushSagaPang__iGameStatus__) */
+#endif /* defined(__ThreeMatchPuzzleX__iGameStatus__) */
