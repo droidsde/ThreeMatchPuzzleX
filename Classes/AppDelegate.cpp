@@ -1,9 +1,9 @@
 #include "AppDelegate.h"
-#include "SceneManager.h"
 #include "CommonEnum.h"
 #include "AppMacros.h"
 #include "NativeManager.h"
 #include "GamePlayManager.h"
+#include "ThreeMatchPuzzleMachine.h"
 
 USING_NS_CC;
 
@@ -13,7 +13,7 @@ AppDelegate::AppDelegate() {
 
 AppDelegate::~AppDelegate() 
 {
-    SceneManager::getInstance()->release();
+    ThreeMatchPuzzleMachine::getInstance()->release();
     NativeManager::getInstance()->release();
     GamePlayManager::getInstance()->release();
 }
@@ -49,7 +49,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // run with scene
-    SceneManager::getInstance()->moveToScene(CommonEnum::eSceneGame);
+    ThreeMatchPuzzleMachine::getInstance()->Start();
+    
 
     return true;
 }

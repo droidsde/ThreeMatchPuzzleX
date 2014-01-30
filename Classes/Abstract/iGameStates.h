@@ -15,14 +15,16 @@
 
 class ThreeMatchPuzzleMachine;
 
-class iGameState {
+class iGameState : public cocos2d::CCObject {
     friend class ThreeMatchPuzzleMachine;
     
 private:
-    CommonEnum::GameState const gameState;
-    ThreeMatchPuzzleMachine* const gameMachine;
+    CommonEnum::GameState const gameState       = CommonEnum::eGameStateUnknown;
+    ThreeMatchPuzzleMachine* const gameMachine  = NULL;
     
 protected:
+    cocos2d::CCNode* gameNode                   = NULL;
+    
     iGameState(ThreeMatchPuzzleMachine* machine, CommonEnum::GameState state);
     virtual ~iGameState();
     
@@ -31,8 +33,10 @@ protected:
     
 public:
     virtual void Start();
+    virtual void Start(cocos2d::CCScene* scene);
     virtual void Pause();
     virtual void End();
+    virtual void Update(float delta);
 };
 
 #endif /* defined(__ThreeMatchPuzzleX__iGameStates) */

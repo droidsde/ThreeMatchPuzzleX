@@ -8,17 +8,33 @@
 
 #include "ThreeMatchPuzzleMachine.h"
 #include "ThreeMatchPuzzleStates.h"
+#include "ThreeMatchPuzzleScene.h"
 
+USING_NS_CC;
+
+static ThreeMatchPuzzleMachine* pInstance = NULL;
+
+ThreeMatchPuzzleMachine* ThreeMatchPuzzleMachine::getInstance() {
+    if( pInstance==NULL )
+        pInstance = new ThreeMatchPuzzleMachine();
+    return pInstance;
+}
 ThreeMatchPuzzleMachine::ThreeMatchPuzzleMachine() {
-    state = Create(CommonEnum::eGameStateInit);
 }
 
 ThreeMatchPuzzleMachine::~ThreeMatchPuzzleMachine() {
-    if( state!=NULL )
-        delete state;
-    state = NULL;
+    if( gameState!=NULL )
+        delete gameState;
+    gameState = NULL;
 }
-
+void ThreeMatchPuzzleMachine::setState(CommonEnum::GameState state) {
+    if( gameState!=NULL )
+        delete gameState;
+    gameState = NULL;
+    
+    gameState = Create(state);
+    gameState->Start();
+}
 iGameState* ThreeMatchPuzzleMachine::Create(CommonEnum::GameState state) {
     switch (state) {
         case CommonEnum::eGameStateInit:
@@ -26,6 +42,12 @@ iGameState* ThreeMatchPuzzleMachine::Create(CommonEnum::GameState state) {
             
         case CommonEnum::eGameStateIdle:
             return new GameStateIdle(this);
+            
+        case CommonEnum::eGameStateStages:
+            return new GameStateStages(this);
+            
+        case CommonEnum::eGameStateStagePreview:
+            return new GameStateStagePreview(this);
             
         case CommonEnum::eGameStateStart:
             return new GameStateStart(this);
@@ -58,4 +80,14 @@ iGameState* ThreeMatchPuzzleMachine::Create(CommonEnum::GameState state) {
     // implement for avoding warning!
     return NULL;
 }
+void ThreeMatchPuzzleMachine::Start() {
+    CCScene* scene = ThreeMatchPuzzleScene::scene();
+    CCDirector::sharedDirector()->runWithScene(scene);
+    gameState = Create(CommonEnum::eGameStateInit);
+    gameState->Start(scene);
+}
 
+void ThreeMatchPuzzleMachine::update(float dt) {
+    if( gameState!=NULL )
+        gameState->Update(dt);
+}

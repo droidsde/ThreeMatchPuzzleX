@@ -11,10 +11,13 @@
 
 #include <iostream>
 #include "iGameStates.h"
+#include "cocos2d.h"
 
 class ThreeMatchPuzzleMachine;
 
 class GameStateInit : public iGameState {
+private:
+    float shownTime = 0;
 protected:
     virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
     
@@ -22,8 +25,8 @@ public:
     GameStateInit(ThreeMatchPuzzleMachine* machine);
     virtual ~GameStateInit();
     
-    virtual void Start();
-    virtual void Pause();
+    virtual void Start(cocos2d::CCScene* scene);
+    virtual void Update(float delta);
     virtual void End();
 };
 
@@ -52,6 +55,33 @@ public:
     virtual void Pause();
     virtual void End();
 };
+
+class GameStateStages : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
+public:
+    GameStateStages(ThreeMatchPuzzleMachine* machine);
+    virtual ~GameStateStages();
+    
+    virtual void Start();
+    virtual void Pause();
+    virtual void End();
+};
+
+class GameStateStagePreview : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
+public:
+    GameStateStagePreview(ThreeMatchPuzzleMachine* machine);
+    virtual ~GameStateStagePreview();
+    
+    virtual void Start();
+    virtual void Pause();
+    virtual void End();
+};
+
 
 class GameStatePlay : public iGameState {
 protected:

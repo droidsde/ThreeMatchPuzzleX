@@ -10,7 +10,11 @@
 #include "ThreeMatchPuzzleMachine.h"
 #include "CommonEnum.h"
 
-//eGameStateInit,
+#include "GameInitNode.h"
+#include "GameIdleNode.h"
+
+USING_NS_CC;
+
 GameStateInit::GameStateInit(ThreeMatchPuzzleMachine* machine)
 : iGameState(machine, CommonEnum::eGameStateInit)
 {
@@ -19,16 +23,26 @@ GameStateInit::~GameStateInit()
 {
 }
 bool GameStateInit::isEnableTransitionAnotherState(CommonEnum::GameState state) {
+    if( state==CommonEnum::eGameStateIdle )
+        return true;
+    
     return false;
 }
-void GameStateInit::Start() {
-    iGameState::Start();
-}
-void GameStateInit::Pause() {
-    iGameState::Pause();
+void GameStateInit::Start(CCScene* scene) {
+    iGameState::Start(scene);
+    GameInitNode* node = GameInitNode::create();
+    gameNode->addChild(node);
 }
 void GameStateInit::End() {
     iGameState::End();
+}
+void GameStateInit::Update(float delta) {
+    if( shownTime>2.0f) {
+        setState(CommonEnum::eGameStateIdle);
+    }
+    else {
+        shownTime += delta;
+    }
 }
 
 //eGameStateIdle,
@@ -44,11 +58,55 @@ bool GameStateIdle::isEnableTransitionAnotherState(CommonEnum::GameState state) 
 }
 void GameStateIdle::Start() {
     iGameState::Start();
+    GameIdleNode* node = GameIdleNode::create();
+    gameNode->addChild(node);
 }
 void GameStateIdle::Pause() {
     iGameState::Pause();
 }
 void GameStateIdle::End() {
+    iGameState::End();
+}
+
+//eGameStateStages,
+GameStateStages::GameStateStages(ThreeMatchPuzzleMachine* machine)
+: iGameState(machine, CommonEnum::eGameStateStages)
+{
+}
+GameStateStages::~GameStateStages()
+{
+}
+bool GameStateStages::isEnableTransitionAnotherState(CommonEnum::GameState state) {
+    return false;
+}
+void GameStateStages::Start() {
+    iGameState::Start();
+}
+void GameStateStages::Pause() {
+    iGameState::Pause();
+}
+void GameStateStages::End() {
+    iGameState::End();
+}
+
+//eGameStateIdle,
+GameStateStagePreview::GameStateStagePreview(ThreeMatchPuzzleMachine* machine)
+: iGameState(machine, CommonEnum::eGameStateStagePreview)
+{
+}
+GameStateStagePreview::~GameStateStagePreview()
+{
+}
+bool GameStateStagePreview::isEnableTransitionAnotherState(CommonEnum::GameState state) {
+    return false;
+}
+void GameStateStagePreview::Start() {
+    iGameState::Start();
+}
+void GameStateStagePreview::Pause() {
+    iGameState::Pause();
+}
+void GameStateStagePreview::End() {
     iGameState::End();
 }
 

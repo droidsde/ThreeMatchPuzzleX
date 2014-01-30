@@ -237,6 +237,43 @@
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		C31BC3E7189A15C5008AA054 /* CommonEnum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC3E6189A15C5008AA054 /* CommonEnum.cpp */; };
+		C31BC3ED189A23D1008AA054 /* ipad in Resources */ = {isa = PBXBuildFile; fileRef = C31BC3E8189A23D1008AA054 /* ipad */; };
+		C31BC3EE189A23D1008AA054 /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = C31BC3E9189A23D1008AA054 /* ipadhd */; };
+		C31BC3EF189A23D1008AA054 /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = C31BC3EA189A23D1008AA054 /* iphone */; };
+		C31BC3F0189A23D1008AA054 /* iphonehd in Resources */ = {isa = PBXBuildFile; fileRef = C31BC3EB189A23D1008AA054 /* iphonehd */; };
+		C31BC3F1189A23D1008AA054 /* newiphonehd in Resources */ = {isa = PBXBuildFile; fileRef = C31BC3EC189A23D1008AA054 /* newiphonehd */; };
+		C31BC3FA189A3252008AA054 /* ThreeMatchPuzzleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC3F8189A3252008AA054 /* ThreeMatchPuzzleScene.cpp */; };
+		C31BC3FE189A36B0008AA054 /* GameInitNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC3FC189A36B0008AA054 /* GameInitNode.cpp */; };
+		C31BC401189A4DEB008AA054 /* GameIdleNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC3FF189A4DEB008AA054 /* GameIdleNode.cpp */; };
+		C31BC404189A5283008AA054 /* GameTitleNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC402189A5283008AA054 /* GameTitleNode.cpp */; };
+		C31BC407189A570A008AA054 /* GameSplashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC405189A570A008AA054 /* GameSplashNode.cpp */; };
+		C31BC40C189A5E74008AA054 /* iNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC40A189A5E74008AA054 /* iNode.cpp */; };
+		C31BC40F189A5EFF008AA054 /* SplashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC40D189A5EFF008AA054 /* SplashNode.cpp */; };
+		C31BC412189A5F13008AA054 /* IntroNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC410189A5F13008AA054 /* IntroNode.cpp */; };
+		C31BC415189A5F24008AA054 /* TitleNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC413189A5F24008AA054 /* TitleNode.cpp */; };
+		C31BC418189A5F3A008AA054 /* StagesNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC416189A5F3A008AA054 /* StagesNode.cpp */; };
+		C31BC41B189A5F54008AA054 /* StagePreviewNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC419189A5F54008AA054 /* StagePreviewNode.cpp */; };
+		C31BC41E189A5F72008AA054 /* ItemSelectNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC41C189A5F72008AA054 /* ItemSelectNode.cpp */; };
+		C31BC421189A5F94008AA054 /* GamePlayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC41F189A5F94008AA054 /* GamePlayNode.cpp */; };
+		C31BC424189A5FA7008AA054 /* GamePauseNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC422189A5FA7008AA054 /* GamePauseNode.cpp */; };
+		C31BC427189A5FBD008AA054 /* PlayResultNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC425189A5FBD008AA054 /* PlayResultNode.cpp */; };
+		C31BC42A189A5FD0008AA054 /* StoryNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC428189A5FD0008AA054 /* StoryNode.cpp */; };
+		C31BC42D189A5FEC008AA054 /* StoreNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC42B189A5FEC008AA054 /* StoreNode.cpp */; };
+		C31BC430189A6028008AA054 /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC42E189A6028008AA054 /* SplashState.cpp */; };
+		C31BC433189A603E008AA054 /* IntroState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC431189A603E008AA054 /* IntroState.cpp */; };
+		C31BC436189A604D008AA054 /* TitleState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC434189A604D008AA054 /* TitleState.cpp */; };
+		C31BC439189A6063008AA054 /* StagesState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC437189A6063008AA054 /* StagesState.cpp */; };
+		C31BC43C189A6078008AA054 /* StagePreviewState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC43A189A6078008AA054 /* StagePreviewState.cpp */; };
+		C31BC43F189A608A008AA054 /* ItemSelectState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC43D189A608A008AA054 /* ItemSelectState.cpp */; };
+		C31BC442189A60B1008AA054 /* GamePlayState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC440189A60B1008AA054 /* GamePlayState.cpp */; };
+		C31BC445189A60D7008AA054 /* GamePauseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC443189A60D6008AA054 /* GamePauseState.cpp */; };
+		C31BC448189A60F7008AA054 /* PlayResultState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC446189A60F7008AA054 /* PlayResultState.cpp */; };
+		C31BC44B189A610E008AA054 /* StoryState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC449189A610E008AA054 /* StoryState.cpp */; };
+		C31BC44E189A611C008AA054 /* StoreState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC44C189A611C008AA054 /* StoreState.cpp */; };
+		C31BC451189A61CF008AA054 /* iState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC44F189A61CF008AA054 /* iState.cpp */; };
+		C31BC454189A6276008AA054 /* GameReadyNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC452189A6276008AA054 /* GameReadyNode.cpp */; };
+		C31BC457189A629C008AA054 /* GameReadyState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC455189A629C008AA054 /* GameReadyState.cpp */; };
+		C31BC45A189A671F008AA054 /* FiniteStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC458189A671F008AA054 /* FiniteStateMachine.cpp */; };
 		C33CBF6B1891ADB200854F7A /* iOSNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF691891ADB200854F7A /* iOSNative.cpp */; };
 		C33CBF711891AE2200854F7A /* iNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF6F1891AE2200854F7A /* iNative.cpp */; };
 		C33CBF741891AE3800854F7A /* AndroidNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF721891AE3800854F7A /* AndroidNative.cpp */; };
@@ -248,12 +285,7 @@
 		C37B014F1899035200B1699B /* GameStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37B014D1899035200B1699B /* GameStateManager.cpp */; };
 		C37B01521899061E00B1699B /* ThreeMatchPuzzleStates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37B01501899061E00B1699B /* ThreeMatchPuzzleStates.cpp */; };
 		C37B0155189906B300B1699B /* ThreeMatchPuzzleMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37B0153189906B300B1699B /* ThreeMatchPuzzleMachine.cpp */; };
-		C3BF2206189156FF00270D56 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2204189156FF00270D56 /* SceneManager.cpp */; };
 		C3BF220A1891583500270D56 /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScene.cpp */; };
-		C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF220C1891587F00270D56 /* SplashScene.cpp */; };
-		C3BF22111891589200270D56 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF220F1891589200270D56 /* TitleScene.cpp */; };
-		C3BF22141891589F00270D56 /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22121891589F00270D56 /* HomeScene.cpp */; };
-		C3BF2217189158AD00270D56 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2215189158AD00270D56 /* GameScene.cpp */; };
 		D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41A0AD0160F154A004552AE /* Default-568h@2x.png */; };
 		D446FD6E16102124000ADA7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD6D16102124000ADA7B /* Default@2x.png */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
@@ -747,6 +779,75 @@
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C31BC3E6189A15C5008AA054 /* CommonEnum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CommonEnum.cpp; path = ../Classes/Common/CommonEnum.cpp; sourceTree = "<group>"; };
+		C31BC3E8189A23D1008AA054 /* ipad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ipad; sourceTree = "<group>"; };
+		C31BC3E9189A23D1008AA054 /* ipadhd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ipadhd; sourceTree = "<group>"; };
+		C31BC3EA189A23D1008AA054 /* iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iphone; sourceTree = "<group>"; };
+		C31BC3EB189A23D1008AA054 /* iphonehd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iphonehd; sourceTree = "<group>"; };
+		C31BC3EC189A23D1008AA054 /* newiphonehd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = newiphonehd; sourceTree = "<group>"; };
+		C31BC3F8189A3252008AA054 /* ThreeMatchPuzzleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreeMatchPuzzleScene.cpp; path = ../Classes/Scene/ThreeMatchPuzzleScene.cpp; sourceTree = "<group>"; };
+		C31BC3F9189A3252008AA054 /* ThreeMatchPuzzleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeMatchPuzzleScene.h; path = ../Classes/Scene/ThreeMatchPuzzleScene.h; sourceTree = "<group>"; };
+		C31BC3FC189A36B0008AA054 /* GameInitNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameInitNode.cpp; path = ../Classes/GameState/Nodes/GameInitNode.cpp; sourceTree = "<group>"; };
+		C31BC3FD189A36B0008AA054 /* GameInitNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameInitNode.h; path = ../Classes/GameState/Nodes/GameInitNode.h; sourceTree = "<group>"; };
+		C31BC3FF189A4DEB008AA054 /* GameIdleNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameIdleNode.cpp; path = ../Classes/GameState/Nodes/GameIdleNode.cpp; sourceTree = "<group>"; };
+		C31BC400189A4DEB008AA054 /* GameIdleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameIdleNode.h; path = ../Classes/GameState/Nodes/GameIdleNode.h; sourceTree = "<group>"; };
+		C31BC402189A5283008AA054 /* GameTitleNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameTitleNode.cpp; path = ../Classes/GameState/Nodes/GameTitleNode.cpp; sourceTree = "<group>"; };
+		C31BC403189A5283008AA054 /* GameTitleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameTitleNode.h; path = ../Classes/GameState/Nodes/GameTitleNode.h; sourceTree = "<group>"; };
+		C31BC405189A570A008AA054 /* GameSplashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSplashNode.cpp; path = ../Classes/GameState/Nodes/GameSplashNode.cpp; sourceTree = "<group>"; };
+		C31BC406189A570A008AA054 /* GameSplashNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSplashNode.h; path = ../Classes/GameState/Nodes/GameSplashNode.h; sourceTree = "<group>"; };
+		C31BC40A189A5E74008AA054 /* iNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iNode.cpp; path = ../Classes/Abstract/iNode.cpp; sourceTree = "<group>"; };
+		C31BC40B189A5E74008AA054 /* iNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iNode.h; path = ../Classes/Abstract/iNode.h; sourceTree = "<group>"; };
+		C31BC40D189A5EFF008AA054 /* SplashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SplashNode.cpp; path = ../Classes/GameState/Nodes/SplashNode.cpp; sourceTree = "<group>"; };
+		C31BC40E189A5EFF008AA054 /* SplashNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashNode.h; path = ../Classes/GameState/Nodes/SplashNode.h; sourceTree = "<group>"; };
+		C31BC410189A5F13008AA054 /* IntroNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntroNode.cpp; path = ../Classes/GameState/Nodes/IntroNode.cpp; sourceTree = "<group>"; };
+		C31BC411189A5F13008AA054 /* IntroNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroNode.h; path = ../Classes/GameState/Nodes/IntroNode.h; sourceTree = "<group>"; };
+		C31BC413189A5F24008AA054 /* TitleNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleNode.cpp; path = ../Classes/GameState/Nodes/TitleNode.cpp; sourceTree = "<group>"; };
+		C31BC414189A5F24008AA054 /* TitleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleNode.h; path = ../Classes/GameState/Nodes/TitleNode.h; sourceTree = "<group>"; };
+		C31BC416189A5F3A008AA054 /* StagesNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StagesNode.cpp; path = ../Classes/GameState/Nodes/StagesNode.cpp; sourceTree = "<group>"; };
+		C31BC417189A5F3A008AA054 /* StagesNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagesNode.h; path = ../Classes/GameState/Nodes/StagesNode.h; sourceTree = "<group>"; };
+		C31BC419189A5F54008AA054 /* StagePreviewNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StagePreviewNode.cpp; path = ../Classes/GameState/Nodes/StagePreviewNode.cpp; sourceTree = "<group>"; };
+		C31BC41A189A5F54008AA054 /* StagePreviewNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagePreviewNode.h; path = ../Classes/GameState/Nodes/StagePreviewNode.h; sourceTree = "<group>"; };
+		C31BC41C189A5F72008AA054 /* ItemSelectNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ItemSelectNode.cpp; path = ../Classes/GameState/Nodes/ItemSelectNode.cpp; sourceTree = "<group>"; };
+		C31BC41D189A5F72008AA054 /* ItemSelectNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemSelectNode.h; path = ../Classes/GameState/Nodes/ItemSelectNode.h; sourceTree = "<group>"; };
+		C31BC41F189A5F94008AA054 /* GamePlayNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamePlayNode.cpp; path = ../Classes/GameState/Nodes/GamePlayNode.cpp; sourceTree = "<group>"; };
+		C31BC420189A5F94008AA054 /* GamePlayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayNode.h; path = ../Classes/GameState/Nodes/GamePlayNode.h; sourceTree = "<group>"; };
+		C31BC422189A5FA7008AA054 /* GamePauseNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamePauseNode.cpp; path = ../Classes/GameState/Nodes/GamePauseNode.cpp; sourceTree = "<group>"; };
+		C31BC423189A5FA7008AA054 /* GamePauseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePauseNode.h; path = ../Classes/GameState/Nodes/GamePauseNode.h; sourceTree = "<group>"; };
+		C31BC425189A5FBD008AA054 /* PlayResultNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayResultNode.cpp; path = ../Classes/GameState/Nodes/PlayResultNode.cpp; sourceTree = "<group>"; };
+		C31BC426189A5FBD008AA054 /* PlayResultNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayResultNode.h; path = ../Classes/GameState/Nodes/PlayResultNode.h; sourceTree = "<group>"; };
+		C31BC428189A5FD0008AA054 /* StoryNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoryNode.cpp; path = ../Classes/GameState/Nodes/StoryNode.cpp; sourceTree = "<group>"; };
+		C31BC429189A5FD0008AA054 /* StoryNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryNode.h; path = ../Classes/GameState/Nodes/StoryNode.h; sourceTree = "<group>"; };
+		C31BC42B189A5FEC008AA054 /* StoreNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoreNode.cpp; path = ../Classes/GameState/Nodes/StoreNode.cpp; sourceTree = "<group>"; };
+		C31BC42C189A5FEC008AA054 /* StoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoreNode.h; path = ../Classes/GameState/Nodes/StoreNode.h; sourceTree = "<group>"; };
+		C31BC42E189A6028008AA054 /* SplashState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SplashState.cpp; path = ../Classes/GameState/States/SplashState.cpp; sourceTree = "<group>"; };
+		C31BC42F189A6028008AA054 /* SplashState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashState.h; path = ../Classes/GameState/States/SplashState.h; sourceTree = "<group>"; };
+		C31BC431189A603E008AA054 /* IntroState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntroState.cpp; path = ../Classes/GameState/States/IntroState.cpp; sourceTree = "<group>"; };
+		C31BC432189A603E008AA054 /* IntroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroState.h; path = ../Classes/GameState/States/IntroState.h; sourceTree = "<group>"; };
+		C31BC434189A604D008AA054 /* TitleState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleState.cpp; path = ../Classes/GameState/States/TitleState.cpp; sourceTree = "<group>"; };
+		C31BC435189A604D008AA054 /* TitleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleState.h; path = ../Classes/GameState/States/TitleState.h; sourceTree = "<group>"; };
+		C31BC437189A6063008AA054 /* StagesState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StagesState.cpp; path = ../Classes/GameState/States/StagesState.cpp; sourceTree = "<group>"; };
+		C31BC438189A6063008AA054 /* StagesState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagesState.h; path = ../Classes/GameState/States/StagesState.h; sourceTree = "<group>"; };
+		C31BC43A189A6078008AA054 /* StagePreviewState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StagePreviewState.cpp; path = ../Classes/GameState/States/StagePreviewState.cpp; sourceTree = "<group>"; };
+		C31BC43B189A6078008AA054 /* StagePreviewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagePreviewState.h; path = ../Classes/GameState/States/StagePreviewState.h; sourceTree = "<group>"; };
+		C31BC43D189A608A008AA054 /* ItemSelectState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ItemSelectState.cpp; path = ../Classes/GameState/States/ItemSelectState.cpp; sourceTree = "<group>"; };
+		C31BC43E189A608A008AA054 /* ItemSelectState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemSelectState.h; path = ../Classes/GameState/States/ItemSelectState.h; sourceTree = "<group>"; };
+		C31BC440189A60B1008AA054 /* GamePlayState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamePlayState.cpp; path = ../Classes/GameState/States/GamePlayState.cpp; sourceTree = "<group>"; };
+		C31BC441189A60B1008AA054 /* GamePlayState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayState.h; path = ../Classes/GameState/States/GamePlayState.h; sourceTree = "<group>"; };
+		C31BC443189A60D6008AA054 /* GamePauseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamePauseState.cpp; path = ../Classes/GameState/States/GamePauseState.cpp; sourceTree = "<group>"; };
+		C31BC444189A60D7008AA054 /* GamePauseState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePauseState.h; path = ../Classes/GameState/States/GamePauseState.h; sourceTree = "<group>"; };
+		C31BC446189A60F7008AA054 /* PlayResultState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayResultState.cpp; path = ../Classes/GameState/States/PlayResultState.cpp; sourceTree = "<group>"; };
+		C31BC447189A60F7008AA054 /* PlayResultState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayResultState.h; path = ../Classes/GameState/States/PlayResultState.h; sourceTree = "<group>"; };
+		C31BC449189A610E008AA054 /* StoryState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoryState.cpp; path = ../Classes/GameState/States/StoryState.cpp; sourceTree = "<group>"; };
+		C31BC44A189A610E008AA054 /* StoryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryState.h; path = ../Classes/GameState/States/StoryState.h; sourceTree = "<group>"; };
+		C31BC44C189A611C008AA054 /* StoreState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoreState.cpp; path = ../Classes/GameState/States/StoreState.cpp; sourceTree = "<group>"; };
+		C31BC44D189A611C008AA054 /* StoreState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoreState.h; path = ../Classes/GameState/States/StoreState.h; sourceTree = "<group>"; };
+		C31BC44F189A61CF008AA054 /* iState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iState.cpp; path = ../Classes/Abstract/iState.cpp; sourceTree = "<group>"; };
+		C31BC450189A61CF008AA054 /* iState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iState.h; path = ../Classes/Abstract/iState.h; sourceTree = "<group>"; };
+		C31BC452189A6276008AA054 /* GameReadyNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameReadyNode.cpp; path = ../Classes/GameState/Nodes/GameReadyNode.cpp; sourceTree = "<group>"; };
+		C31BC453189A6276008AA054 /* GameReadyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameReadyNode.h; path = ../Classes/GameState/Nodes/GameReadyNode.h; sourceTree = "<group>"; };
+		C31BC455189A629C008AA054 /* GameReadyState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameReadyState.cpp; path = ../Classes/GameState/States/GameReadyState.cpp; sourceTree = "<group>"; };
+		C31BC456189A629C008AA054 /* GameReadyState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameReadyState.h; path = ../Classes/GameState/States/GameReadyState.h; sourceTree = "<group>"; };
+		C31BC458189A671F008AA054 /* FiniteStateMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FiniteStateMachine.cpp; path = ../Classes/GameState/Machines/FiniteStateMachine.cpp; sourceTree = "<group>"; };
+		C31BC459189A671F008AA054 /* FiniteStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FiniteStateMachine.h; path = ../Classes/GameState/Machines/FiniteStateMachine.h; sourceTree = "<group>"; };
 		C33CBF641891A5F100854F7A /* AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/MultipleResolution/AppMacros.h; sourceTree = "<group>"; };
 		C33CBF691891ADB200854F7A /* iOSNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iOSNative.cpp; path = ../Classes/NativeSupport/iOSNative.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C33CBF6A1891ADB200854F7A /* iOSNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iOSNative.h; path = ../Classes/NativeSupport/iOSNative.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -771,18 +872,8 @@
 		C37B01511899061E00B1699B /* ThreeMatchPuzzleStates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeMatchPuzzleStates.h; path = ../Classes/GameState/ThreeMatchPuzzleStates.h; sourceTree = "<group>"; };
 		C37B0153189906B300B1699B /* ThreeMatchPuzzleMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreeMatchPuzzleMachine.cpp; path = ../Classes/GameState/ThreeMatchPuzzleMachine.cpp; sourceTree = "<group>"; };
 		C37B0154189906B300B1699B /* ThreeMatchPuzzleMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeMatchPuzzleMachine.h; path = ../Classes/GameState/ThreeMatchPuzzleMachine.h; sourceTree = "<group>"; };
-		C3BF2204189156FF00270D56 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = SceneManager.cpp; path = ../Classes/Manager/SceneManager.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
-		C3BF2205189156FF00270D56 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SceneManager.h; path = ../Classes/Manager/SceneManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C3BF22091891583500270D56 /* iScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iScene.h; path = ../Classes/Abstract/iScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		C3BF220C1891587F00270D56 /* SplashScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SplashScene.cpp; path = ../Classes/Scene/SplashScene.cpp; sourceTree = "<group>"; };
-		C3BF220D1891587F00270D56 /* SplashScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashScene.h; path = ../Classes/Scene/SplashScene.h; sourceTree = "<group>"; };
-		C3BF220F1891589200270D56 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleScene.cpp; path = ../Classes/Scene/TitleScene.cpp; sourceTree = "<group>"; };
-		C3BF22101891589200270D56 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../Classes/Scene/TitleScene.h; sourceTree = "<group>"; };
-		C3BF22121891589F00270D56 /* HomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = HomeScene.cpp; path = ../Classes/Scene/HomeScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
-		C3BF22131891589F00270D56 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = HomeScene.h; path = ../Classes/Scene/HomeScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		C3BF2215189158AD00270D56 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = GameScene.cpp; path = ../Classes/Scene/GameScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
-		C3BF2216189158AD00270D56 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GameScene.h; path = ../Classes/Scene/GameScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		D41A0AD0160F154A004552AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../proj.ios/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D446FD6D16102124000ADA7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../proj.ios/Default@2x.png"; sourceTree = "<group>"; };
@@ -1314,12 +1405,12 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C3BF220B1891586500270D56 /* Scene */,
 				C3615F8518969E67009C0378 /* GameState */,
 				C33CBF851892E1E300854F7A /* Block */,
 				C33CBF651891AD4200854F7A /* NativeSupport */,
 				C33CBF621891A59A00854F7A /* MultipleResolution */,
 				C3BF221B1891655000270D56 /* Common */,
-				C3BF220B1891586500270D56 /* Scene */,
 				C3BF22071891580400270D56 /* Abstract */,
 				C3BF2203189156E900270D56 /* Manager */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
@@ -1768,6 +1859,11 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C31BC3E8189A23D1008AA054 /* ipad */,
+				C31BC3E9189A23D1008AA054 /* ipadhd */,
+				C31BC3EA189A23D1008AA054 /* iphone */,
+				C31BC3EB189A23D1008AA054 /* iphonehd */,
+				C31BC3EC189A23D1008AA054 /* newiphonehd */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -1781,6 +1877,85 @@
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		C31BC3FB189A3694008AA054 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				C31BC3FC189A36B0008AA054 /* GameInitNode.cpp */,
+				C31BC3FD189A36B0008AA054 /* GameInitNode.h */,
+				C31BC3FF189A4DEB008AA054 /* GameIdleNode.cpp */,
+				C31BC400189A4DEB008AA054 /* GameIdleNode.h */,
+				C31BC402189A5283008AA054 /* GameTitleNode.cpp */,
+				C31BC403189A5283008AA054 /* GameTitleNode.h */,
+				C31BC405189A570A008AA054 /* GameSplashNode.cpp */,
+				C31BC406189A570A008AA054 /* GameSplashNode.h */,
+				C31BC40D189A5EFF008AA054 /* SplashNode.cpp */,
+				C31BC40E189A5EFF008AA054 /* SplashNode.h */,
+				C31BC410189A5F13008AA054 /* IntroNode.cpp */,
+				C31BC411189A5F13008AA054 /* IntroNode.h */,
+				C31BC413189A5F24008AA054 /* TitleNode.cpp */,
+				C31BC414189A5F24008AA054 /* TitleNode.h */,
+				C31BC416189A5F3A008AA054 /* StagesNode.cpp */,
+				C31BC417189A5F3A008AA054 /* StagesNode.h */,
+				C31BC419189A5F54008AA054 /* StagePreviewNode.cpp */,
+				C31BC41A189A5F54008AA054 /* StagePreviewNode.h */,
+				C31BC41C189A5F72008AA054 /* ItemSelectNode.cpp */,
+				C31BC41D189A5F72008AA054 /* ItemSelectNode.h */,
+				C31BC452189A6276008AA054 /* GameReadyNode.cpp */,
+				C31BC453189A6276008AA054 /* GameReadyNode.h */,
+				C31BC41F189A5F94008AA054 /* GamePlayNode.cpp */,
+				C31BC420189A5F94008AA054 /* GamePlayNode.h */,
+				C31BC422189A5FA7008AA054 /* GamePauseNode.cpp */,
+				C31BC423189A5FA7008AA054 /* GamePauseNode.h */,
+				C31BC425189A5FBD008AA054 /* PlayResultNode.cpp */,
+				C31BC426189A5FBD008AA054 /* PlayResultNode.h */,
+				C31BC428189A5FD0008AA054 /* StoryNode.cpp */,
+				C31BC429189A5FD0008AA054 /* StoryNode.h */,
+				C31BC42B189A5FEC008AA054 /* StoreNode.cpp */,
+				C31BC42C189A5FEC008AA054 /* StoreNode.h */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		C31BC408189A5C21008AA054 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				C31BC42E189A6028008AA054 /* SplashState.cpp */,
+				C31BC42F189A6028008AA054 /* SplashState.h */,
+				C31BC431189A603E008AA054 /* IntroState.cpp */,
+				C31BC432189A603E008AA054 /* IntroState.h */,
+				C31BC434189A604D008AA054 /* TitleState.cpp */,
+				C31BC435189A604D008AA054 /* TitleState.h */,
+				C31BC437189A6063008AA054 /* StagesState.cpp */,
+				C31BC438189A6063008AA054 /* StagesState.h */,
+				C31BC43A189A6078008AA054 /* StagePreviewState.cpp */,
+				C31BC43B189A6078008AA054 /* StagePreviewState.h */,
+				C31BC43D189A608A008AA054 /* ItemSelectState.cpp */,
+				C31BC43E189A608A008AA054 /* ItemSelectState.h */,
+				C31BC455189A629C008AA054 /* GameReadyState.cpp */,
+				C31BC456189A629C008AA054 /* GameReadyState.h */,
+				C31BC440189A60B1008AA054 /* GamePlayState.cpp */,
+				C31BC441189A60B1008AA054 /* GamePlayState.h */,
+				C31BC443189A60D6008AA054 /* GamePauseState.cpp */,
+				C31BC444189A60D7008AA054 /* GamePauseState.h */,
+				C31BC446189A60F7008AA054 /* PlayResultState.cpp */,
+				C31BC447189A60F7008AA054 /* PlayResultState.h */,
+				C31BC449189A610E008AA054 /* StoryState.cpp */,
+				C31BC44A189A610E008AA054 /* StoryState.h */,
+				C31BC44C189A611C008AA054 /* StoreState.cpp */,
+				C31BC44D189A611C008AA054 /* StoreState.h */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		C31BC409189A5C2A008AA054 /* Machines */ = {
+			isa = PBXGroup;
+			children = (
+				C31BC458189A671F008AA054 /* FiniteStateMachine.cpp */,
+				C31BC459189A671F008AA054 /* FiniteStateMachine.h */,
+			);
+			name = Machines;
 			sourceTree = "<group>";
 		};
 		C33CBF621891A59A00854F7A /* MultipleResolution */ = {
@@ -1814,6 +1989,9 @@
 		C3615F8518969E67009C0378 /* GameState */ = {
 			isa = PBXGroup;
 			children = (
+				C31BC409189A5C2A008AA054 /* Machines */,
+				C31BC408189A5C21008AA054 /* States */,
+				C31BC3FB189A3694008AA054 /* Nodes */,
 				C37B01501899061E00B1699B /* ThreeMatchPuzzleStates.cpp */,
 				C37B01511899061E00B1699B /* ThreeMatchPuzzleStates.h */,
 				C37B0153189906B300B1699B /* ThreeMatchPuzzleMachine.cpp */,
@@ -1827,8 +2005,6 @@
 			children = (
 				C37B014D1899035200B1699B /* GameStateManager.cpp */,
 				C37B014E1899035200B1699B /* GameStateManager.h */,
-				C3BF2204189156FF00270D56 /* SceneManager.cpp */,
-				C3BF2205189156FF00270D56 /* SceneManager.h */,
 				C33CBF751891AEC600854F7A /* NativeManager.cpp */,
 				C33CBF761891AEC600854F7A /* NativeManager.h */,
 				C33CBF801891B18100854F7A /* GamePlayManager.cpp */,
@@ -1848,6 +2024,10 @@
 				C33CBF871892E21400854F7A /* iBlock.h */,
 				C3615F8218969E4C009C0378 /* iGameStates.cpp */,
 				C3615F8318969E4C009C0378 /* iGameStates.h */,
+				C31BC40A189A5E74008AA054 /* iNode.cpp */,
+				C31BC40B189A5E74008AA054 /* iNode.h */,
+				C31BC44F189A61CF008AA054 /* iState.cpp */,
+				C31BC450189A61CF008AA054 /* iState.h */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -1855,14 +2035,8 @@
 		C3BF220B1891586500270D56 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				C3BF220C1891587F00270D56 /* SplashScene.cpp */,
-				C3BF220D1891587F00270D56 /* SplashScene.h */,
-				C3BF220F1891589200270D56 /* TitleScene.cpp */,
-				C3BF22101891589200270D56 /* TitleScene.h */,
-				C3BF22121891589F00270D56 /* HomeScene.cpp */,
-				C3BF22131891589F00270D56 /* HomeScene.h */,
-				C3BF2215189158AD00270D56 /* GameScene.cpp */,
-				C3BF2216189158AD00270D56 /* GameScene.h */,
+				C31BC3F8189A3252008AA054 /* ThreeMatchPuzzleScene.cpp */,
+				C31BC3F9189A3252008AA054 /* ThreeMatchPuzzleScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -1948,16 +2122,21 @@
 			files = (
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
+				C31BC3ED189A23D1008AA054 /* ipad in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
+				C31BC3EE189A23D1008AA054 /* ipadhd in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
+				C31BC3EF189A23D1008AA054 /* iphone in Resources */,
+				C31BC3F0189A23D1008AA054 /* iphonehd in Resources */,
 				379BB9CC17F03F3700829B88 /* json_internalarray.inl in Resources */,
+				C31BC3F1189A23D1008AA054 /* newiphonehd in Resources */,
 				379BB9CD17F03F3700829B88 /* json_internalmap.inl in Resources */,
 				379BB9D017F03F3700829B88 /* json_valueiterator.inl in Resources */,
 				379BB9D217F03F3700829B88 /* sconscript in Resources */,
@@ -1974,15 +2153,20 @@
 				15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */,
 				15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */,
 				15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */,
+				C31BC41B189A5F54008AA054 /* StagePreviewNode.cpp in Sources */,
+				C31BC421189A5F94008AA054 /* GamePlayNode.cpp in Sources */,
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
+				C31BC42D189A5FEC008AA054 /* StoreNode.cpp in Sources */,
 				15A3D9051682F7D5002FB0C5 /* b2DynamicTree.cpp in Sources */,
 				15A3D9061682F7D5002FB0C5 /* b2TimeOfImpact.cpp in Sources */,
+				C31BC442189A60B1008AA054 /* GamePlayState.cpp in Sources */,
 				15A3D9071682F7D5002FB0C5 /* b2ChainShape.cpp in Sources */,
 				15A3D9081682F7D5002FB0C5 /* b2CircleShape.cpp in Sources */,
 				C3615F8418969E4C009C0378 /* iGameStates.cpp in Sources */,
 				15A3D9091682F7D5002FB0C5 /* b2EdgeShape.cpp in Sources */,
+				C31BC427189A5FBD008AA054 /* PlayResultNode.cpp in Sources */,
 				15A3D90A1682F7D5002FB0C5 /* b2PolygonShape.cpp in Sources */,
 				15A3D90B1682F7D5002FB0C5 /* b2BlockAllocator.cpp in Sources */,
 				15A3D90C1682F7D5002FB0C5 /* b2Draw.cpp in Sources */,
@@ -1994,10 +2178,13 @@
 				15A3D9121682F7D5002FB0C5 /* b2ContactManager.cpp in Sources */,
 				15A3D9131682F7D5002FB0C5 /* b2Fixture.cpp in Sources */,
 				15A3D9141682F7D5002FB0C5 /* b2Island.cpp in Sources */,
+				C31BC40C189A5E74008AA054 /* iNode.cpp in Sources */,
 				15A3D9151682F7D5002FB0C5 /* b2World.cpp in Sources */,
 				15A3D9161682F7D5002FB0C5 /* b2WorldCallbacks.cpp in Sources */,
 				15A3D9171682F7D5002FB0C5 /* b2ChainAndCircleContact.cpp in Sources */,
+				C31BC41E189A5F72008AA054 /* ItemSelectNode.cpp in Sources */,
 				15A3D9181682F7D5002FB0C5 /* b2ChainAndPolygonContact.cpp in Sources */,
+				C31BC43F189A608A008AA054 /* ItemSelectState.cpp in Sources */,
 				15A3D9191682F7D5002FB0C5 /* b2CircleContact.cpp in Sources */,
 				15A3D91A1682F7D5002FB0C5 /* b2Contact.cpp in Sources */,
 				15A3D91B1682F7D5002FB0C5 /* b2ContactSolver.cpp in Sources */,
@@ -2007,6 +2194,7 @@
 				15A3D91E1682F7D5002FB0C5 /* b2PolygonAndCircleContact.cpp in Sources */,
 				C33CBF6B1891ADB200854F7A /* iOSNative.cpp in Sources */,
 				15A3D91F1682F7D5002FB0C5 /* b2PolygonContact.cpp in Sources */,
+				C31BC430189A6028008AA054 /* SplashState.cpp in Sources */,
 				15A3D9201682F7D5002FB0C5 /* b2DistanceJoint.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
@@ -2021,8 +2209,8 @@
 				15A3D92A1682F7D5002FB0C5 /* b2WheelJoint.cpp in Sources */,
 				15A3D9391682F7D5002FB0C5 /* b2Rope.cpp in Sources */,
 				15A3D9951682F7F9002FB0C5 /* chipmunk.c in Sources */,
+				C31BC407189A570A008AA054 /* GameSplashNode.cpp in Sources */,
 				15A3D9971682F7F9002FB0C5 /* cpConstraint.c in Sources */,
-				C3BF22111891589200270D56 /* TitleScene.cpp in Sources */,
 				15A3D9981682F7F9002FB0C5 /* cpDampedRotarySpring.c in Sources */,
 				15A3D9991682F7F9002FB0C5 /* cpDampedSpring.c in Sources */,
 				15A3D99A1682F7F9002FB0C5 /* cpGearJoint.c in Sources */,
@@ -2042,7 +2230,9 @@
 				15A3D9A71682F7F9002FB0C5 /* cpCollision.c in Sources */,
 				15A3D9A81682F7F9002FB0C5 /* cpHashSet.c in Sources */,
 				15A3D9A91682F7F9002FB0C5 /* cpPolyShape.c in Sources */,
+				C31BC457189A629C008AA054 /* GameReadyState.cpp in Sources */,
 				15A3D9AA1682F7F9002FB0C5 /* cpShape.c in Sources */,
+				C31BC415189A5F24008AA054 /* TitleNode.cpp in Sources */,
 				15A3D9AB1682F7F9002FB0C5 /* cpSpace.c in Sources */,
 				15A3D9AC1682F7F9002FB0C5 /* cpSpaceComponent.c in Sources */,
 				15A3D9AD1682F7F9002FB0C5 /* cpSpaceHash.c in Sources */,
@@ -2052,11 +2242,13 @@
 				C33CBF821891B18100854F7A /* GamePlayManager.cpp in Sources */,
 				15A3D9B11682F7F9002FB0C5 /* cpSweep1D.c in Sources */,
 				15A3D9B21682F7F9002FB0C5 /* cpVect.c in Sources */,
+				C31BC3FE189A36B0008AA054 /* GameInitNode.cpp in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
 				15A3DA331682F826002FB0C5 /* CCBKeyframe.cpp in Sources */,
 				15A3DA341682F826002FB0C5 /* CCBReader.cpp in Sources */,
 				15A3DA351682F826002FB0C5 /* CCBSequence.cpp in Sources */,
+				C31BC44E189A611C008AA054 /* StoreState.cpp in Sources */,
 				15A3DA361682F826002FB0C5 /* CCBSequenceProperty.cpp in Sources */,
 				15A3DA371682F826002FB0C5 /* CCBValue.cpp in Sources */,
 				15A3DA381682F826002FB0C5 /* CCControlButtonLoader.cpp in Sources */,
@@ -2066,20 +2258,26 @@
 				15A3DA3C1682F826002FB0C5 /* CCLabelTTFLoader.cpp in Sources */,
 				15A3DA3D1682F826002FB0C5 /* CCLayerColorLoader.cpp in Sources */,
 				15A3DA3E1682F826002FB0C5 /* CCLayerGradientLoader.cpp in Sources */,
+				C31BC40F189A5EFF008AA054 /* SplashNode.cpp in Sources */,
 				15A3DA3F1682F826002FB0C5 /* CCLayerLoader.cpp in Sources */,
+				C31BC404189A5283008AA054 /* GameTitleNode.cpp in Sources */,
 				15A3DA401682F826002FB0C5 /* CCMenuItemImageLoader.cpp in Sources */,
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,
 				15A3DA421682F826002FB0C5 /* CCNode+CCBRelativePositioning.cpp in Sources */,
-				C3BF2206189156FF00270D56 /* SceneManager.cpp in Sources */,
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
+				C31BC451189A61CF008AA054 /* iState.cpp in Sources */,
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
+				C31BC44B189A610E008AA054 /* StoryState.cpp in Sources */,
+				C31BC418189A5F3A008AA054 /* StagesNode.cpp in Sources */,
 				15A3DA471682F826002FB0C5 /* CCScrollViewLoader.cpp in Sources */,
 				15A3DA481682F826002FB0C5 /* CCSpriteLoader.cpp in Sources */,
+				C31BC401189A4DEB008AA054 /* GameIdleNode.cpp in Sources */,
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
+				C31BC433189A603E008AA054 /* IntroState.cpp in Sources */,
 				15A3DA4C1682F826002FB0C5 /* CCControlHuePicker.cpp in Sources */,
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
 				15A3DA4E1682F826002FB0C5 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
@@ -2103,11 +2301,12 @@
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
+				C31BC412189A5F13008AA054 /* IntroNode.cpp in Sources */,
 				1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
-				C3BF22141891589F00270D56 /* HomeScene.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
 				C33CBF711891AE2200854F7A /* iNative.cpp in Sources */,
+				C31BC45A189A671F008AA054 /* FiniteStateMachine.cpp in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
 				1A8F3B6E175E05DA00049216 /* Animation.cpp in Sources */,
@@ -2120,7 +2319,6 @@
 				1A8F3B75175E05DA00049216 /* Bone.cpp in Sources */,
 				1A8F3B76175E05DA00049216 /* BoneData.cpp in Sources */,
 				1A8F3B77175E05DA00049216 /* CCSkeleton.cpp in Sources */,
-				C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */,
 				C31BC3E7189A15C5008AA054 /* CommonEnum.cpp in Sources */,
 				1A8F3B78175E05DA00049216 /* CCSkeletonAnimation.cpp in Sources */,
 				1A8F3B79175E05DA00049216 /* extension.cpp in Sources */,
@@ -2134,9 +2332,11 @@
 				1A8F3B81175E05DA00049216 /* SlotData.cpp in Sources */,
 				1A8F3B82175E05DA00049216 /* spine-cocos2dx.cpp in Sources */,
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
+				C31BC439189A6063008AA054 /* StagesState.cpp in Sources */,
 				1A9CE8781765A12C000E3062 /* AssetsManager.cpp in Sources */,
 				379BB99517F03F3700829B88 /* CCActionFrame.cpp in Sources */,
 				379BB99617F03F3700829B88 /* CCActionFrameEasing.cpp in Sources */,
+				C31BC424189A5FA7008AA054 /* GamePauseNode.cpp in Sources */,
 				379BB99717F03F3700829B88 /* CCActionManager.cpp in Sources */,
 				379BB99817F03F3700829B88 /* CCActionNode.cpp in Sources */,
 				C3BF220A1891583500270D56 /* iScene.cpp in Sources */,
@@ -2145,6 +2345,7 @@
 				379BB99B17F03F3700829B88 /* CCProcessBase.cpp in Sources */,
 				379BB99C17F03F3700829B88 /* CCTween.cpp in Sources */,
 				379BB99D17F03F3700829B88 /* CCArmature.cpp in Sources */,
+				C31BC448189A60F7008AA054 /* PlayResultState.cpp in Sources */,
 				379BB99E17F03F3700829B88 /* CCBone.cpp in Sources */,
 				379BB99F17F03F3700829B88 /* CCDatas.cpp in Sources */,
 				379BB9A017F03F3700829B88 /* CCBatchNode.cpp in Sources */,
@@ -2152,6 +2353,7 @@
 				379BB9A217F03F3700829B88 /* CCDisplayFactory.cpp in Sources */,
 				379BB9A317F03F3700829B88 /* CCDisplayManager.cpp in Sources */,
 				379BB9A417F03F3700829B88 /* CCSkin.cpp in Sources */,
+				C31BC445189A60D7008AA054 /* GamePauseState.cpp in Sources */,
 				379BB9A517F03F3700829B88 /* CCColliderDetector.cpp in Sources */,
 				379BB9A617F03F3700829B88 /* CCArmatureDataManager.cpp in Sources */,
 				379BB9A717F03F3700829B88 /* CCArmatureDefine.cpp in Sources */,
@@ -2160,13 +2362,16 @@
 				379BB9AA17F03F3700829B88 /* CCTransformHelp.cpp in Sources */,
 				379BB9AB17F03F3700829B88 /* CCTweenFunction.cpp in Sources */,
 				379BB9AC17F03F3700829B88 /* CCUtilMath.cpp in Sources */,
+				C31BC436189A604D008AA054 /* TitleState.cpp in Sources */,
 				379BB9AD17F03F3700829B88 /* CCComAttribute.cpp in Sources */,
+				C31BC43C189A6078008AA054 /* StagePreviewState.cpp in Sources */,
 				379BB9AE17F03F3700829B88 /* CCComAudio.cpp in Sources */,
 				379BB9AF17F03F3700829B88 /* CCComController.cpp in Sources */,
 				379BB9B017F03F3700829B88 /* CCComRender.cpp in Sources */,
 				C33CBF881892E21400854F7A /* iBlock.cpp in Sources */,
 				379BB9B117F03F3700829B88 /* CCInputDelegate.cpp in Sources */,
 				379BB9B217F03F3700829B88 /* UIRootWidget.cpp in Sources */,
+				C31BC3FA189A3252008AA054 /* ThreeMatchPuzzleScene.cpp in Sources */,
 				379BB9B317F03F3700829B88 /* UIWidget.cpp in Sources */,
 				379BB9B417F03F3700829B88 /* UILayout.cpp in Sources */,
 				379BB9B617F03F3700829B88 /* UILayoutParameter.cpp in Sources */,
@@ -2186,9 +2391,11 @@
 				379BB9C417F03F3700829B88 /* UILabelAtlas.cpp in Sources */,
 				379BB9C517F03F3700829B88 /* UILabelBMFont.cpp in Sources */,
 				379BB9C617F03F3700829B88 /* UILoadingBar.cpp in Sources */,
+				C31BC454189A6276008AA054 /* GameReadyNode.cpp in Sources */,
 				379BB9C717F03F3700829B88 /* UISlider.cpp in Sources */,
 				379BB9C817F03F3700829B88 /* UISwitch.cpp in Sources */,
 				379BB9C917F03F3700829B88 /* UITextField.cpp in Sources */,
+				C31BC42A189A5FD0008AA054 /* StoryNode.cpp in Sources */,
 				379BB9CA17F03F3700829B88 /* CSContentJsonDictionary.cpp in Sources */,
 				379BB9CB17F03F3700829B88 /* DictionaryHelper.cpp in Sources */,
 				ED35BF4C183230FC002A0750 /* UIListViewEx.cpp in Sources */,
@@ -2198,7 +2405,6 @@
 				379BB9CF17F03F3700829B88 /* json_value.cpp in Sources */,
 				379BB9D117F03F3700829B88 /* json_writer.cpp in Sources */,
 				379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */,
-				C3BF2217189158AD00270D56 /* GameScene.cpp in Sources */,
 				379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

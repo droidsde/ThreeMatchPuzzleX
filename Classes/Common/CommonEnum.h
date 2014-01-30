@@ -35,6 +35,8 @@ namespace CommonEnum {
         eGameStateUnknown,
         eGameStateInit,
         eGameStateIdle,
+        eGameStateStages,
+        eGameStateStagePreview,
         eGameStateStart,
         eGameStatePlay,
         eGameStatePause,
@@ -45,6 +47,24 @@ namespace CommonEnum {
     } GameState;
     
     const char* getStringForGameState(GameState state);
+    
+    typedef enum {
+        eStateUnknown,
+        eStateSplash,
+        eStateIntro,
+        eStateTitle,
+        eStateStages,
+        eStateStagePreview,
+        eStateItemSelect,
+        eStateGameReady,
+        eStateGamePlay,
+        eStateGamePause,
+        eStatePlayResult,
+        eStateStory,
+        eStateStore,
+    } State;
+    
+    const char* getStringForState(State state);
     
 };
 
