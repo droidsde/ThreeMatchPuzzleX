@@ -39,6 +39,8 @@ namespace CommonEnum {
         eGameStatePlay,
         eGameStatePause,
         eGameStateResult,
+        eGameStateSuccess,
+        eGameStateFail,
         eGameStateExit,
     } GameState;
     

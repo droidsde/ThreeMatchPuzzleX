@@ -92,6 +92,32 @@ public:
     virtual void End();
 };
 
+class GameStateSuccess : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
+public:
+    GameStateSuccess(ThreeMatchPuzzleMachine* machine);
+    virtual ~GameStateSuccess();
+    
+    virtual void Start();
+    virtual void Pause();
+    virtual void End();
+};
+
+class GameStateFail : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
+public:
+    GameStateFail(ThreeMatchPuzzleMachine* machine);
+    virtual ~GameStateFail();
+    
+    virtual void Start();
+    virtual void Pause();
+    virtual void End();
+};
+
 class GameStateExit : public iGameState {
 protected:
     virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);

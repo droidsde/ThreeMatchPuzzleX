@@ -138,6 +138,46 @@ void GameStateResult::Pause() {
 void GameStateResult::End() {
 }
 
+//eGameStateSuccess,
+GameStateSuccess::GameStateSuccess(ThreeMatchPuzzleMachine* machine)
+: iGameState(machine, CommonEnum::eGameStateSuccess)
+{
+}
+GameStateSuccess::~GameStateSuccess()
+{
+}
+bool GameStateSuccess::isEnableTransitionAnotherState(CommonEnum::GameState state) {
+    return false;
+}
+void GameStateSuccess::Start() {
+    iGameState::Start();
+}
+void GameStateSuccess::Pause() {
+    iGameState::Pause();
+}
+void GameStateSuccess::End() {
+}
+
+//eGameStateFail,
+GameStateFail::GameStateFail(ThreeMatchPuzzleMachine* machine)
+: iGameState(machine, CommonEnum::eGameStateFail)
+{
+}
+GameStateFail::~GameStateFail()
+{
+}
+bool GameStateFail::isEnableTransitionAnotherState(CommonEnum::GameState state) {
+    return false;
+}
+void GameStateFail::Start() {
+    iGameState::Start();
+}
+void GameStateFail::Pause() {
+    iGameState::Pause();
+}
+void GameStateFail::End() {
+}
+
 
 //eGameStateExit,
 GameStateExit::GameStateExit(ThreeMatchPuzzleMachine* machine)

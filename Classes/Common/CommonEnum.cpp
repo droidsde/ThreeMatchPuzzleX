@@ -26,6 +26,10 @@ const char* CommonEnum::getStringForGameState(GameState state)
             return "eGameStatePause";
         case eGameStateResult:
             return "eGameStateResult";
+        case eGameStateSuccess:
+            return "eGameStateSuccess";
+        case eGameStateFail:
+            return "eGameStateFail";
         case eGameStateExit:
             return "eGameStateExit";
         default:
