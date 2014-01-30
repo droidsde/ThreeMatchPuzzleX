@@ -13,12 +13,23 @@
 #include "cocos2d.h"
 #include "CommonEnum.h"
 
+class ThreeMatchPuzzleMachine;
+
 class iGameState : public cocos2d::CCObject {
+    friend class ThreeMatchPuzzleMachine;
+    
+private:
+    CommonEnum::GameState const gameState;
+    ThreeMatchPuzzleMachine* const gameMachine;
+    
+    static iGameState* createState(CommonEnum::GameState state);
+    
 protected:
-    iGameState(CommonEnum::GameState state);
+    iGameState(ThreeMatchPuzzleMachine* machine, CommonEnum::GameState state);
     virtual ~iGameState();
     
-    CommonEnum::GameState gameState = CommonEnum::eGameStateUnknown;
+    virtual void setState(CommonEnum::GameState state);
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state) = 0;
     
 public:
     virtual void Start();

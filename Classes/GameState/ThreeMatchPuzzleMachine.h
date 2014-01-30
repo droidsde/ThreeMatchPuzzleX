@@ -14,9 +14,11 @@
 //#include "ThreeMatchPuzzleStates.h"
 //class AbstractState;
 class iGameState;
+class GameStateInit;
+class GameStateIdle;
 
 class ThreeMatchPuzzleMachine {
-    friend class iGameState;
+    friend class GameStateInit;
     
 public:
     ThreeMatchPuzzleMachine();

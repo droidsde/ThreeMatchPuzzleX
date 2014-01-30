@@ -12,16 +12,14 @@
 #include <iostream>
 #include "iGameStates.h"
 
-//eGameStateInit,
-//eGameStateStart,
-//eGameStatePlay,
-//eGameStatePause,
-//eGameStateResult,
-//eGameStateExit,
+class ThreeMatchPuzzleMachine;
 
 class GameStateInit : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
 public:
-    GameStateInit();
+    GameStateInit(ThreeMatchPuzzleMachine* machine);
     virtual ~GameStateInit();
     
     virtual void Start();
@@ -29,9 +27,25 @@ public:
     virtual void End();
 };
 
-class GameStateStart : public iGameState {
+class GameStateIdle : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
 public:
-    GameStateStart();
+    GameStateIdle(ThreeMatchPuzzleMachine* machine);
+    virtual ~GameStateIdle();
+    
+    virtual void Start();
+    virtual void Pause();
+    virtual void End();
+};
+
+class GameStateStart : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
+public:
+    GameStateStart(ThreeMatchPuzzleMachine* machine);
     virtual ~GameStateStart();
     
     virtual void Start();
@@ -40,8 +54,11 @@ public:
 };
 
 class GameStatePlay : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
 public:
-    GameStatePlay();
+    GameStatePlay(ThreeMatchPuzzleMachine* machine);
     virtual ~GameStatePlay();
     
     virtual void Start();
@@ -50,8 +67,11 @@ public:
 };
 
 class GameStatePause : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
 public:
-    GameStatePause();
+    GameStatePause(ThreeMatchPuzzleMachine* machine);
     virtual ~GameStatePause();
     
     virtual void Start();
@@ -60,8 +80,11 @@ public:
 };
 
 class GameStateResult : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
 public:
-    GameStateResult();
+    GameStateResult(ThreeMatchPuzzleMachine* machine);
     virtual ~GameStateResult();
     
     virtual void Start();
@@ -70,8 +93,11 @@ public:
 };
 
 class GameStateExit : public iGameState {
+protected:
+    virtual bool isEnableTransitionAnotherState(CommonEnum::GameState state);
+    
 public:
-    GameStateExit();
+    GameStateExit(ThreeMatchPuzzleMachine* machine);
     virtual ~GameStateExit();
     
     virtual void Start();

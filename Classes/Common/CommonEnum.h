@@ -6,8 +6,7 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__CommonEnum__
-#define __ThreeMatchPuzzleX__CommonEnum__
+#pragma once
 
 #include <iostream>
 
@@ -35,6 +34,7 @@ namespace CommonEnum {
     typedef enum {
         eGameStateUnknown,
         eGameStateInit,
+        eGameStateIdle,
         eGameStateStart,
         eGameStatePlay,
         eGameStatePause,
@@ -42,6 +42,8 @@ namespace CommonEnum {
         eGameStateExit,
     } GameState;
     
+    const char* getStringForGameState(GameState state);
+    
 };
 
-#endif /* defined(__ThreeMatchPuzzleX__CommonEnum__) */
+//#endif /* defined(__ThreeMatchPuzzleX__CommonEnum__) */

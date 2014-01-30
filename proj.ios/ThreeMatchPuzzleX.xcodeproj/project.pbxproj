@@ -236,6 +236,7 @@
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		C31BC3E7189A15C5008AA054 /* CommonEnum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BC3E6189A15C5008AA054 /* CommonEnum.cpp */; };
 		C33CBF6B1891ADB200854F7A /* iOSNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF691891ADB200854F7A /* iOSNative.cpp */; };
 		C33CBF711891AE2200854F7A /* iNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF6F1891AE2200854F7A /* iNative.cpp */; };
 		C33CBF741891AE3800854F7A /* AndroidNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF721891AE3800854F7A /* AndroidNative.cpp */; };
@@ -745,6 +746,7 @@
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C31BC3E6189A15C5008AA054 /* CommonEnum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CommonEnum.cpp; path = ../Classes/Common/CommonEnum.cpp; sourceTree = "<group>"; };
 		C33CBF641891A5F100854F7A /* AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/MultipleResolution/AppMacros.h; sourceTree = "<group>"; };
 		C33CBF691891ADB200854F7A /* iOSNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iOSNative.cpp; path = ../Classes/NativeSupport/iOSNative.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C33CBF6A1891ADB200854F7A /* iOSNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iOSNative.h; path = ../Classes/NativeSupport/iOSNative.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1870,6 +1872,7 @@
 			children = (
 				C3BF221D1891656200270D56 /* CommonEnum.h */,
 				C33CBF841891B66900854F7A /* CommonValue.h */,
+				C31BC3E6189A15C5008AA054 /* CommonEnum.cpp */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -2118,6 +2121,7 @@
 				1A8F3B76175E05DA00049216 /* BoneData.cpp in Sources */,
 				1A8F3B77175E05DA00049216 /* CCSkeleton.cpp in Sources */,
 				C3BF220E1891587F00270D56 /* SplashScene.cpp in Sources */,
+				C31BC3E7189A15C5008AA054 /* CommonEnum.cpp in Sources */,
 				1A8F3B78175E05DA00049216 /* CCSkeletonAnimation.cpp in Sources */,
 				1A8F3B79175E05DA00049216 /* extension.cpp in Sources */,
 				1A8F3B7A175E05DA00049216 /* Json.cpp in Sources */,

@@ -10,6 +10,8 @@
 #include "ThreeMatchPuzzleStates.h"
 
 ThreeMatchPuzzleMachine::ThreeMatchPuzzleMachine() {
+    state = new GameStateInit(this);
 }
 ThreeMatchPuzzleMachine::~ThreeMatchPuzzleMachine() {
+    state->End();
 }
