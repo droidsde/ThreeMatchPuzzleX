@@ -15,14 +15,12 @@
 
 class ThreeMatchPuzzleMachine;
 
-class iGameState : public cocos2d::CCObject {
+class iGameState {
     friend class ThreeMatchPuzzleMachine;
     
 private:
     CommonEnum::GameState const gameState;
     ThreeMatchPuzzleMachine* const gameMachine;
-    
-    static iGameState* createState(CommonEnum::GameState state);
     
 protected:
     iGameState(ThreeMatchPuzzleMachine* machine, CommonEnum::GameState state);

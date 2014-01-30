@@ -10,25 +10,24 @@
 #define __ThreeMatchPuzzleX__ThreeMatchPuzzleMachine__
 
 #include <iostream>
+#include "CommonEnum.h"
 
 //#include "ThreeMatchPuzzleStates.h"
 //class AbstractState;
 class iGameState;
-class GameStateInit;
-class GameStateIdle;
 
-class ThreeMatchPuzzleMachine {
-    friend class GameStateInit;
-    
+class ThreeMatchPuzzleMachine {    
 public:
     ThreeMatchPuzzleMachine();
     ~ThreeMatchPuzzleMachine();
-    
+
 //    void sell(int quantity);
 //    void refill(int quantity);
 //    int getCurrentStock();
+    
 private:
     iGameState* state = NULL;
+    iGameState* Create(CommonEnum::GameState state);
 };
 
 

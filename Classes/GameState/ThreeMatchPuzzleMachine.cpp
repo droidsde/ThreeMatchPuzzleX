@@ -10,8 +10,39 @@
 #include "ThreeMatchPuzzleStates.h"
 
 ThreeMatchPuzzleMachine::ThreeMatchPuzzleMachine() {
-    state = new GameStateInit(this);
+    state = Create(CommonEnum::eGameStateInit);
 }
 ThreeMatchPuzzleMachine::~ThreeMatchPuzzleMachine() {
-    state->End();
+    if( state!=NULL )
+        delete state;
+    state = NULL;
 }
+
+iGameState* ThreeMatchPuzzleMachine::Create(CommonEnum::GameState state) {
+    switch (state) {
+        case CommonEnum::eGameStateInit:
+            return new GameStateInit(this);
+        case CommonEnum::eGameStateIdle:
+            return new GameStateIdle(this);
+        case CommonEnum::eGameStateStart:
+            return new GameStateStart(this);
+        case CommonEnum::eGameStatePlay:
+            return new GameStatePlay(this);
+        case CommonEnum::eGameStatePause:
+            return new GameStatePause(this);
+        case CommonEnum::eGameStateResult:
+            return new GameStateResult(this);
+        case CommonEnum::eGameStateExit:
+            return new GameStateExit(this);
+        default:
+        {
+            char message[128];
+            printf(message, "You can't create ""%s"" state.", CommonEnum::getStringForGameState(state));
+            CCAssert(true, message);
+        }
+    }
+    
+    // implement for avoding warning!
+    return NULL;
+}
+
