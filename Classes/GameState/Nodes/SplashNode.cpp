@@ -11,7 +11,7 @@
 USING_NS_CC;
 
 bool SplashNode::init() {
-    if( !CCNode::init() )
+    if( !iNode::init() )
         return false;
     
     CCLabelTTF* sceneDebugLabel = CCLabelTTF::create();
@@ -21,4 +21,19 @@ bool SplashNode::init() {
     this->addChild(sceneDebugLabel);
     
     return true;
+}
+
+void SplashNode::onEvent(CommonEnum::Event event) {
+    if( event==CommonEnum::eEventSplashFadein ) {
+        onEventFadeIn();
+    }
+    else if( event==CommonEnum::eEventSplashFadein ) {
+        onEventFadeOut();
+    }
+}
+void SplashNode::onEventFadeIn() {
+    CCLOG("Called SplashNode::onEventFadeIn method.");
+}
+void SplashNode::onEventFadeOut() {
+    CCLOG("Called SplashNode::onEventFadeOut method.");
 }

@@ -12,14 +12,15 @@
 #include "CommonEnum.h"
 
 class iFSM;
+class iNode;
 
 class iState : public cocos2d::CCObject {
-private:
-    CommonEnum::State   const gameState     = CommonEnum::eStateUnknown;
-    iFSM*               const gameFSM       = NULL;
-    
 protected:
-    cocos2d::CCNode* const gameNode         = NULL;
+    CommonEnum::State   const gameState = CommonEnum::eStateUnknown;
+    cocos2d::CCNode*    const rootNode  = NULL;
+    iFSM*               const gameFSM   = NULL;
+    iNode* linkedNode                   = NULL;
+    bool beUpdate                       = true;
     
     iState(iFSM* fsm, CommonEnum::State state);
     virtual ~iState();
@@ -31,7 +32,5 @@ public:
     virtual void start();
     virtual void start(cocos2d::CCScene* scene);
     virtual void pause();
-    virtual void update(float delta);
+    virtual void update(float dt);
 };
-
-

@@ -8,15 +8,19 @@
 
 #include "iState.h"
 #include "iFSM.h"
+#include "iNode.h"
 
 USING_NS_CC;
 
 iState::iState(iFSM* fsm, CommonEnum::State state)
-: gameFSM(fsm), gameState(state), gameNode(new CCNode())
+: gameFSM(fsm), gameState(state), rootNode(new CCNode())
 {
 }
 iState::~iState() {
-    gameNode->removeFromParentAndCleanup(true);
+    if( linkedNode!=NULL )
+        linkedNode->removeFromParentAndCleanup(true);
+    
+    rootNode->removeFromParentAndCleanup(true);
 }
 void iState::setState(CommonEnum::State state) {
 }
@@ -29,5 +33,5 @@ void iState::start(cocos2d::CCScene* scene) {
 }
 void iState::pause() {
 }
-void iState::update(float delta) {
+void iState::update(float dt) {
 }

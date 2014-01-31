@@ -10,6 +10,9 @@
 #include "iFSM.h"
 #include "CommonEnum.h"
 #include "SplashNode.h"
+#include "cocos2d.h"
+
+USING_NS_CC;
 
 SplashState::SplashState(iFSM* machine)
 : iState(machine, CommonEnum::eStateSplash)
@@ -18,13 +21,22 @@ SplashState::SplashState(iFSM* machine)
 SplashState::~SplashState() {
 }
 
-bool SplashState::isEnableTransitionAnotherState(CommonEnum::State state) {
-    return true;
-}
 void SplashState::start(cocos2d::CCScene* scene) {
-    SplashNode* node = SplashNode::create();
-    gameNode->addChild(node);
-    scene->addChild(gameNode);
+    linkedNode = SplashNode::create();
+    linkedNode->retain();
+    rootNode->addChild(linkedNode);
+    scene->addChild(rootNode);
 }
-void SplashState::update(float delta) {
+void SplashState::update(float dt) {
+    if( beUpdate==false )
+        return;
+    
+    if( currentShownTime>totalShownTime ) {
+        CCLOG("Splash 이미지를 Fadeout 하도록 합니다.");
+        linkedNode->onEvent(CommonEnum::eEventSplashFadeout);
+        beUpdate = false;
+    }
+    else {
+        currentShownTime+=dt;
+    }
 }

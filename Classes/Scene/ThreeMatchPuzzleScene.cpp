@@ -7,7 +7,6 @@
 //
 
 #include "ThreeMatchPuzzleScene.h"
-//#include "ThreeMatchPuzzleMachine.h"
 #include "FiniteStateMachine.h"
 
 USING_NS_CC;

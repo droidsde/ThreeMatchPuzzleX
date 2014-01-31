@@ -9,10 +9,12 @@
 #pragma once 
 
 #include "cocos2d.h"
+#include "CommonEnum.h"
 
-class iNode : cocos2d::CCNode {
+class iNode : public cocos2d::CCNode {
 protected:
     bool isOveray = false;
     
-    virtual bool init();
+public:
+    virtual void onEvent(CommonEnum::Event event) = 0;
 };

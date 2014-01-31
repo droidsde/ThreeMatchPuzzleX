@@ -6,9 +6,15 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__IntroNode__
-#define __ThreeMatchPuzzleX__IntroNode__
+#pragma once
 
-#include <iostream>
+#include "iNode.h"
+#include "CommonEnum.h"
 
-#endif /* defined(__ThreeMatchPuzzleX__IntroNode__) */
+class IntroNode : public iNode {
+public:
+    virtual bool init();
+    CREATE_FUNC(IntroNode);
+    
+    void onEvent(CommonEnum::Event event);
+};

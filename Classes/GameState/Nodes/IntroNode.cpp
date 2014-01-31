@@ -7,3 +7,12 @@
 //
 
 #include "IntroNode.h"
+
+bool IntroNode::init() {
+    if( !iNode::init() )
+        return false;
+    return true;
+}
+
+void IntroNode::onEvent(CommonEnum::Event event) {   
+}

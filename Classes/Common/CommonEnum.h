@@ -66,6 +66,14 @@ namespace CommonEnum {
     
     const char* getStringForState(State state);
     
+    typedef enum {
+        eEventUnknown,
+        
+        eEventSplashFadein,
+        eEventSplashFadeout,
+        
+    } Event;
+    
 };
 
 //#endif /* defined(__ThreeMatchPuzzleX__CommonEnum__) */

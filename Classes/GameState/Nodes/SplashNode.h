@@ -6,16 +6,18 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__SplashNode__
-#define __ThreeMatchPuzzleX__SplashNode__
 
-#include <iostream>
+#include "iNode.h"
 #include "cocos2d.h"
 
-class SplashNode : public cocos2d::CCNode {
+class SplashNode : public iNode {
 public:
     virtual bool init();
     CREATE_FUNC(SplashNode);
+    
+    void onEvent(CommonEnum::Event event);
+    
+private:
+    void onEventFadeIn();
+    void onEventFadeOut();
 };
-
-#endif /* defined(__ThreeMatchPuzzleX__SplashNode__) */
