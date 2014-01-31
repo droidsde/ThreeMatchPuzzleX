@@ -7,10 +7,11 @@
 //
 
 #include "iState.h"
+#include "iFSM.h"
 
 USING_NS_CC;
 
-iState::iState(FiniteStateMachine* fsm, CommonEnum::State state)
+iState::iState(iFSM* fsm, CommonEnum::State state)
 : gameFSM(fsm), gameState(state), gameNode(new CCNode())
 {
 }
@@ -22,11 +23,11 @@ void iState::setState(CommonEnum::State state) {
 bool iState::isEnableTransitionAnotherState(CommonEnum::State state) {
     return true;
 }
-void iState::Start() {
+void iState::start() {
 }
-void iState::Start(cocos2d::CCScene* scene) {
+void iState::start(cocos2d::CCScene* scene) {
 }
-void iState::Pause() {
+void iState::pause() {
 }
-void iState::Update(float delta) {
+void iState::update(float delta) {
 }

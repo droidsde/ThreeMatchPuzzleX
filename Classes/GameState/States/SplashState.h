@@ -10,19 +10,17 @@
 
 #include "iState.h"
 
-class FiniteStateMachine;
+class iFSM;
 
 class SplashState : public iState {
     friend class FiniteStateMachine;
     
 private:
-    SplashState(FiniteStateMachine* machine);
+    SplashState(iFSM* machine);
     virtual ~SplashState();
     virtual bool isEnableTransitionAnotherState(CommonEnum::State state);
     
 public:
-    virtual void Start(cocos2d::CCScene* scene);
-    virtual void Pause();
-    virtual void Update(float delta);
-    
+    virtual void start(cocos2d::CCScene* scene);
+    virtual void update(float delta);
 };

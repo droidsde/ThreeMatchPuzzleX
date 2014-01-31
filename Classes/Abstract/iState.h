@@ -11,29 +11,27 @@
 #include "cocos2d.h"
 #include "CommonEnum.h"
 
-class FiniteStateMachine;
+class iFSM;
 
 class iState : public cocos2d::CCObject {
-    friend class FiniteStateMachine;
-    
 private:
     CommonEnum::State   const gameState     = CommonEnum::eStateUnknown;
-    FiniteStateMachine* const gameFSM       = NULL;
+    iFSM*               const gameFSM       = NULL;
     
 protected:
     cocos2d::CCNode* const gameNode         = NULL;
     
-    iState(FiniteStateMachine* fsm, CommonEnum::State state);
+    iState(iFSM* fsm, CommonEnum::State state);
     virtual ~iState();
     
     virtual void setState(CommonEnum::State state);
     virtual bool isEnableTransitionAnotherState(CommonEnum::State state);
     
 public:
-    virtual void Start();
-    virtual void Start(cocos2d::CCScene* scene);
-    virtual void Pause();
-    virtual void Update(float delta);
+    virtual void start();
+    virtual void start(cocos2d::CCScene* scene);
+    virtual void pause();
+    virtual void update(float delta);
 };
 
 

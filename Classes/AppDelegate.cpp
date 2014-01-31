@@ -50,7 +50,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run with scene
     FiniteStateMachine::getInstance()->start();
-    
 
     return true;
 }

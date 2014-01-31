@@ -278,6 +278,7 @@
 		C33CBF881892E21400854F7A /* iBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF861892E21400854F7A /* iBlock.cpp */; };
 		C33CBF8B1892E24C00854F7A /* Blocks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33CBF891892E24C00854F7A /* Blocks.cpp */; };
 		C37B014F1899035200B1699B /* GameStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37B014D1899035200B1699B /* GameStateManager.cpp */; };
+		C3BCAE23189BCD8A001C381C /* iFSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BCAE21189BCD8A001C381C /* iFSM.cpp */; };
 		C3BF220A1891583500270D56 /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScene.cpp */; };
 		D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41A0AD0160F154A004552AE /* Default-568h@2x.png */; };
 		D446FD6E16102124000ADA7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD6D16102124000ADA7B /* Default@2x.png */; };
@@ -851,6 +852,8 @@
 		C33CBF8A1892E24C00854F7A /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Blocks.h; path = ../Classes/Block/Blocks.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C37B014D1899035200B1699B /* GameStateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameStateManager.cpp; path = ../Classes/Manager/GameStateManager.cpp; sourceTree = "<group>"; };
 		C37B014E1899035200B1699B /* GameStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameStateManager.h; path = ../Classes/Manager/GameStateManager.h; sourceTree = "<group>"; };
+		C3BCAE21189BCD8A001C381C /* iFSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iFSM.cpp; path = ../Classes/Abstract/iFSM.cpp; sourceTree = "<group>"; };
+		C3BCAE22189BCD8A001C381C /* iFSM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iFSM.h; path = ../Classes/Abstract/iFSM.h; sourceTree = "<group>"; };
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C3BF22091891583500270D56 /* iScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iScene.h; path = ../Classes/Abstract/iScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1993,6 +1996,8 @@
 				C31BC40B189A5E74008AA054 /* iNode.h */,
 				C31BC44F189A61CF008AA054 /* iState.cpp */,
 				C31BC450189A61CF008AA054 /* iState.h */,
+				C3BCAE21189BCD8A001C381C /* iFSM.cpp */,
+				C3BCAE22189BCD8A001C381C /* iFSM.h */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -2163,6 +2168,7 @@
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
 				15A3D9231682F7D5002FB0C5 /* b2Joint.cpp in Sources */,
+				C3BCAE23189BCD8A001C381C /* iFSM.cpp in Sources */,
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,
 				15A3D9251682F7D5002FB0C5 /* b2PrismaticJoint.cpp in Sources */,
 				C33CBF771891AEC600854F7A /* NativeManager.cpp in Sources */,

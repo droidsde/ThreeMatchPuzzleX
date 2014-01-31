@@ -26,23 +26,33 @@ void FiniteStateMachine::start() {
     CCDirector::sharedDirector()->runWithScene(scene);
     
     currentState = create(CommonEnum::eStateSplash);
-    currentState->Start(scene);
+    currentState->start(scene);
 }
 void FiniteStateMachine::update(float dt) {
     if( currentState!=NULL )
         currentState->update(dt);
 }
-iState* FiniteStateMachine::create(CommonEnum::State targetState) {
+iState* FiniteStateMachine::create(CommonEnum::State targetState, bool dontRemoveCurrentState) {
     switch (targetState) {
         case CommonEnum::eStateSplash:
             return new SplashState(this);
         default:
         {
-            char message[128];
+            char message[64];
             printf(message, "You can't create ""%s"" state.", CommonEnum::getStringForState(targetState));
             CCAssert(true, message);
         }
     }
     
     return NULL;
+}
+void FiniteStateMachine::setState(CommonEnum::State targetState, bool dontRemoveCurrentState) {
+    if( dontRemoveCurrentState==false ) {
+        currentState->release();
+        currentState = NULL;
+    }
+    
+    currentState = create(targetState, dontRemoveCurrentState);
+    CCScene* runningScene = CCDirector::sharedDirector()->getRunningScene();
+    currentState->start(runningScene);
 }
