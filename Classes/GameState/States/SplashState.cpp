@@ -32,7 +32,6 @@ void SplashState::update(float dt) {
         return;
     
     if( currentShownTime>totalShownTime ) {
-        CCLOG("Splash 이미지를 Fadeout 하도록 합니다.");
         linkedNode->onEvent(CommonEnum::eEventSplashFadeout);
         beUpdate = false;
     }
