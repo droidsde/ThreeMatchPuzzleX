@@ -27,7 +27,7 @@ protected:
     virtual ~iState();
     
     virtual void setState(CommonEnum::State state);
-    virtual bool isEnableTransitionAnotherState(CommonEnum::State state) = 0;
+    virtual bool isEnableTransitionAnotherState(CommonEnum::State state);
     
 public:
     virtual void Start();

@@ -27,7 +27,6 @@ void FiniteStateMachine::start() {
     
     currentState = create(CommonEnum::eStateSplash);
     currentState->Start(scene);
-
 }
 void FiniteStateMachine::update(float dt) {
     if( currentState!=NULL )

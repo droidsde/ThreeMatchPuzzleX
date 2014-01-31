@@ -21,7 +21,6 @@ private:
     virtual bool isEnableTransitionAnotherState(CommonEnum::State state);
     
 public:
-    virtual void Start();
     virtual void Start(cocos2d::CCScene* scene);
     virtual void Pause();
     virtual void Update(float delta);

@@ -7,7 +7,8 @@
 //
 
 #include "ThreeMatchPuzzleScene.h"
-#include "ThreeMatchPuzzleMachine.h"
+//#include "ThreeMatchPuzzleMachine.h"
+#include "FiniteStateMachine.h"
 
 USING_NS_CC;
 
@@ -30,5 +31,5 @@ bool ThreeMatchPuzzleScene::init() {
     return true;
 }
 void ThreeMatchPuzzleScene::update(float dt) {
-    ThreeMatchPuzzleMachine::getInstance()->update(dt);
+    FiniteStateMachine::getInstance()->update(dt);
 }

@@ -3,7 +3,7 @@
 #include "AppMacros.h"
 #include "NativeManager.h"
 #include "GamePlayManager.h"
-#include "ThreeMatchPuzzleMachine.h"
+#include "FiniteStateMachine.h"
 
 USING_NS_CC;
 
@@ -13,7 +13,7 @@ AppDelegate::AppDelegate() {
 
 AppDelegate::~AppDelegate() 
 {
-    ThreeMatchPuzzleMachine::getInstance()->release();
+    FiniteStateMachine::getInstance()->release();
     NativeManager::getInstance()->release();
     GamePlayManager::getInstance()->release();
 }
@@ -49,7 +49,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // run with scene
-    ThreeMatchPuzzleMachine::getInstance()->Start();
+    FiniteStateMachine::getInstance()->start();
     
 
     return true;
