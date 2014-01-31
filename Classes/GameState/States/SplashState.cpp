@@ -26,6 +26,8 @@ void SplashState::start(cocos2d::CCScene* scene) {
     linkedNode->retain();
     rootNode->addChild(linkedNode);
     scene->addChild(rootNode);
+    
+    linkedNode->onEvent(CommonEnum::eEventSplashFadein);
 }
 void SplashState::update(float dt) {
     if( beUpdate==false )

@@ -20,4 +20,6 @@ public:
 private:
     void onEventFadeIn();
     void onEventFadeOut();
+    
+    void onEndFadeOut();
 };

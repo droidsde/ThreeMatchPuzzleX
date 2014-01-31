@@ -6,9 +6,17 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__IntroState__
-#define __ThreeMatchPuzzleX__IntroState__
+#pragma once
 
-#include <iostream>
+#include "iState.h"
 
-#endif /* defined(__ThreeMatchPuzzleX__IntroState__) */
+class iFSM;
+
+class IntroState : public iState {
+public:
+    IntroState(iFSM* machine);
+    virtual ~IntroState();
+    
+    virtual void start(cocos2d::CCScene* scene);
+    virtual void update(float dt);
+};
