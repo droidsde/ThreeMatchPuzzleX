@@ -6,9 +6,24 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__SplashState__
-#define __ThreeMatchPuzzleX__SplashState__
+#pragma once
 
-#include <iostream>
+#include "iState.h"
 
-#endif /* defined(__ThreeMatchPuzzleX__SplashState__) */
+class FiniteStateMachine;
+
+class SplashState : public iState {
+    friend class FiniteStateMachine;
+    
+private:
+    SplashState(FiniteStateMachine* machine);
+    virtual ~SplashState();
+    virtual bool isEnableTransitionAnotherState(CommonEnum::State state);
+    
+public:
+    virtual void Start();
+    virtual void Start(cocos2d::CCScene* scene);
+    virtual void Pause();
+    virtual void Update(float delta);
+    
+};
