@@ -6,9 +6,18 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__TitleState__
-#define __ThreeMatchPuzzleX__TitleState__
+#pragma once
 
-#include <iostream>
+#include "iState.h"
 
-#endif /* defined(__ThreeMatchPuzzleX__TitleState__) */
+class iFSM;
+
+class TitleState : public iState {
+public:
+    TitleState(iFSM* fsm);
+    virtual ~TitleState();
+    
+    virtual void start(cocos2d::CCScene* scene);
+    virtual void update(float dt);
+    virtual void onEvent(CommonEnum::Event event);
+};

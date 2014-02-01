@@ -10,11 +10,12 @@
 
 #include "cocos2d.h"
 #include "CommonEnum.h"
+#include "iEventHandler.h"
 
 class iFSM;
 class iNode;
 
-class iState : public cocos2d::CCObject {
+class iState : public cocos2d::CCObject, public iEventHandler {
 protected:
     CommonEnum::State   const gameState = CommonEnum::eStateUnknown;
     cocos2d::CCNode*    const rootNode  = NULL;

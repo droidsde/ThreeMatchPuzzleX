@@ -14,8 +14,8 @@
 
 USING_NS_CC;
 
-SplashState::SplashState(iFSM* machine)
-: iState(machine, CommonEnum::eStateSplash)
+SplashState::SplashState(iFSM* fsm)
+: iState(fsm, CommonEnum::eStateSplash)
 {
 }
 SplashState::~SplashState() {
@@ -23,6 +23,7 @@ SplashState::~SplashState() {
 
 void SplashState::start(cocos2d::CCScene* scene) {
     linkedNode = SplashNode::create();
+    linkedNode->setLinkedState(this);
     linkedNode->retain();
     rootNode->addChild(linkedNode);
     scene->addChild(rootNode);
@@ -39,5 +40,13 @@ void SplashState::update(float dt) {
     }
     else {
         currentShownTime+=dt;
+    }
+}
+void SplashState::onEvent(CommonEnum::Event event) {
+    if( event==CommonEnum::eEventSplashFadeoutFinished ) {
+        if( gameFSM==NULL )
+            CCAssert(true, "gameFSM instance is NULL.");
+        
+        gameFSM->setState(CommonEnum::eStateIntro);
     }
 }

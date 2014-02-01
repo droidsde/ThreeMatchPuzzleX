@@ -10,6 +10,8 @@
 #include "ThreeMatchPuzzleScene.h"
 #include "iState.h"
 #include "SplashState.h"
+#include "IntroState.h"
+#include "TitleState.h"
 
 USING_NS_CC;
 
@@ -36,6 +38,10 @@ iState* FiniteStateMachine::create(CommonEnum::State targetState, bool dontRemov
     switch (targetState) {
         case CommonEnum::eStateSplash:
             return new SplashState(this);
+        case CommonEnum::eStateIntro:
+            return new IntroState(this);
+        case CommonEnum::eStateTitle:
+            return new TitleState(this);
         default:
         {
             char message[64];

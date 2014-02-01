@@ -6,9 +6,14 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__TitleNode__
-#define __ThreeMatchPuzzleX__TitleNode__
+#pragma once
 
-#include <iostream>
+#include "iNode.h"
+#include "CommonEnum.h"
 
-#endif /* defined(__ThreeMatchPuzzleX__TitleNode__) */
+class TitleNode : public iNode {
+public:
+    virtual bool init();
+    virtual void onEvent(CommonEnum::Event event);
+    CREATE_FUNC(TitleNode);
+};

@@ -13,13 +13,11 @@
 class SplashNode : public iNode {
 public:
     virtual bool init();
+    virtual void onEvent(CommonEnum::Event event);
     CREATE_FUNC(SplashNode);
-    
-    void onEvent(CommonEnum::Event event);
     
 private:
     void onEventFadeIn();
     void onEventFadeOut();
-    
     void onEndFadeOut();
 };

@@ -8,6 +8,7 @@
 
 #include "SplashNode.h"
 #include "FiniteStateMachine.h"
+#include "iState.h"
 
 USING_NS_CC;
 
@@ -56,8 +57,8 @@ void SplashNode::onEventFadeOut() {
 }
 void SplashNode::onEndFadeOut() {
     CCLOG("Ended BI Fadeout processing. Please changed to Another State.");
-    // Do you thingk correctly?
-    // State to Node로 onEvent method를 호출하여 You can process with event.
-    // 하지만, But, Node to State로 이벤트를 전달할 수 있는 방법은 아직 없습니다. fade out이 발생 했을 때 "iFSM의 setState" 메소드를 호출하여 State를 전이하여야 합니다.
-    //FiniteStateMachine::getInstance()->setState(CommonEnum::eStateIntro);
+    if( linkedState==NULL )
+        CCAssert(true, "linkedState is NULL pointer. You must call ""setLinkedState"" method.");
+    
+    linkedState->onEvent(CommonEnum::eEventSplashFadeoutFinished);
 }

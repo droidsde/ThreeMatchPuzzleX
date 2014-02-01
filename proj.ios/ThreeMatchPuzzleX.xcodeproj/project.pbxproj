@@ -280,6 +280,7 @@
 		C37B014F1899035200B1699B /* GameStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37B014D1899035200B1699B /* GameStateManager.cpp */; };
 		C3BCAE23189BCD8A001C381C /* iFSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BCAE21189BCD8A001C381C /* iFSM.cpp */; };
 		C3BF220A1891583500270D56 /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScene.cpp */; };
+		C3F91E31189D240900BAA4B2 /* iEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F91E2F189D240900BAA4B2 /* iEventHandler.cpp */; };
 		D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41A0AD0160F154A004552AE /* Default-568h@2x.png */; };
 		D446FD6E16102124000ADA7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD6D16102124000ADA7B /* Default@2x.png */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
@@ -857,6 +858,8 @@
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C3BF22091891583500270D56 /* iScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iScene.h; path = ../Classes/Abstract/iScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C3F91E2F189D240900BAA4B2 /* iEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iEventHandler.cpp; path = ../Classes/Abstract/iEventHandler.cpp; sourceTree = "<group>"; };
+		C3F91E30189D240900BAA4B2 /* iEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iEventHandler.h; path = ../Classes/Abstract/iEventHandler.h; sourceTree = "<group>"; };
 		D41A0AD0160F154A004552AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../proj.ios/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D446FD6D16102124000ADA7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../proj.ios/Default@2x.png"; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -1998,6 +2001,8 @@
 				C31BC450189A61CF008AA054 /* iState.h */,
 				C3BCAE21189BCD8A001C381C /* iFSM.cpp */,
 				C3BCAE22189BCD8A001C381C /* iFSM.h */,
+				C3F91E2F189D240900BAA4B2 /* iEventHandler.cpp */,
+				C3F91E30189D240900BAA4B2 /* iEventHandler.h */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -2315,6 +2320,7 @@
 				379BB99F17F03F3700829B88 /* CCDatas.cpp in Sources */,
 				379BB9A017F03F3700829B88 /* CCBatchNode.cpp in Sources */,
 				379BB9A117F03F3700829B88 /* CCDecorativeDisplay.cpp in Sources */,
+				C3F91E31189D240900BAA4B2 /* iEventHandler.cpp in Sources */,
 				379BB9A217F03F3700829B88 /* CCDisplayFactory.cpp in Sources */,
 				379BB9A317F03F3700829B88 /* CCDisplayManager.cpp in Sources */,
 				379BB9A417F03F3700829B88 /* CCSkin.cpp in Sources */,

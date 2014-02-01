@@ -10,11 +10,14 @@
 
 #include "cocos2d.h"
 #include "CommonEnum.h"
+#include "iEventHandler.h"
 
-class iNode : public cocos2d::CCNode {
+class iState;
+
+class iNode : public cocos2d::CCNode, public iEventHandler {
 protected:
-    bool isOveray = false;
+    iState* linkedState = NULL;
     
 public:
-    virtual void onEvent(CommonEnum::Event event) = 0;
+    void setLinkedState(iState* state) { linkedState = state; }
 };

@@ -19,6 +19,7 @@ public:
     
     virtual void start(cocos2d::CCScene* scene);
     virtual void update(float dt);
+    virtual void onEvent(CommonEnum::Event event);
     
 private:
     float const totalShownTime = 2.0f;

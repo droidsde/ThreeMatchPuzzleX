@@ -71,6 +71,9 @@ namespace CommonEnum {
         
         eEventSplashFadein,
         eEventSplashFadeout,
+        eEventSplashFadeoutFinished,
+        
+        eEventIntroEnded,
         
     } Event;
     

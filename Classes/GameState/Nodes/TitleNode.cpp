@@ -7,3 +7,12 @@
 //
 
 #include "TitleNode.h"
+
+bool TitleNode::init() {
+    if( !iNode::init() )
+        return false;
+    
+    return true;
+}
+void TitleNode::onEvent(CommonEnum::Event event) {
+}
