@@ -10,11 +10,9 @@
 
 #include "iState.h"
 
-class iFSM;
-
 class SplashState : public iState {
 public:
-    SplashState(iFSM* machine);
+    SplashState();
     virtual ~SplashState();
     
     virtual void start(cocos2d::CCScene* scene);

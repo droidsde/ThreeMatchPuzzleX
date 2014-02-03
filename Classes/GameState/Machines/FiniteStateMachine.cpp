@@ -40,11 +40,11 @@ void FiniteStateMachine::update(float dt) {
 iState* FiniteStateMachine::create(CommonEnum::State targetState, bool dontRemoveCurrentState) {
     switch (targetState) {
         case CommonEnum::eStateSplash:
-            return new SplashState(this);
+            return new SplashState();
         case CommonEnum::eStateIntro:
-            return new IntroState(this);
+            return new IntroState();
         case CommonEnum::eStateTitle:
-            return new TitleState(this);
+            return new TitleState();
         default:
         {
             char message[64];

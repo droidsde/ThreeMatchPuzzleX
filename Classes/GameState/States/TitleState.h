@@ -10,11 +10,9 @@
 
 #include "iState.h"
 
-class iFSM;
-
 class TitleState : public iState {
 public:
-    TitleState(iFSM* fsm);
+    TitleState();
     virtual ~TitleState();
     
     virtual void start(cocos2d::CCScene* scene);

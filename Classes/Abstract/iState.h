@@ -12,18 +12,16 @@
 #include "CommonEnum.h"
 #include "iEventHandler.h"
 
-class iFSM;
 class iNode;
 
 class iState : public cocos2d::CCObject, public iEventHandler {
 protected:
     CommonEnum::State   const gameState = CommonEnum::eStateUnknown;
     cocos2d::CCNode*    const rootNode  = NULL;
-    iFSM*               const gameFSM   = NULL;
     iNode* linkedNode                   = NULL;
     bool beUpdate                       = true;
     
-    iState(iFSM* fsm, CommonEnum::State state);
+    iState(CommonEnum::State state);
     virtual ~iState();
     
     virtual void setState(CommonEnum::State state);

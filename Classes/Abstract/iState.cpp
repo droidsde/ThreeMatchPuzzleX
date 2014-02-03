@@ -12,8 +12,8 @@
 
 USING_NS_CC;
 
-iState::iState(iFSM* fsm, CommonEnum::State state)
-: gameFSM(fsm), gameState(state), rootNode(new CCNode())
+iState::iState(CommonEnum::State state)
+: gameState(state), rootNode(new CCNode())
 {
 }
 iState::~iState() {

@@ -9,8 +9,8 @@
 #include "TitleState.h"
 #include "TitleNode.h"
 
-TitleState::TitleState(iFSM* fsm)
-: iState(fsm, CommonEnum::eStateTitle)
+TitleState::TitleState()
+: iState(CommonEnum::eStateTitle)
 {
 }
 TitleState::~TitleState() {

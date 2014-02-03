@@ -11,11 +11,9 @@
 #include "iState.h"
 #include "CommonEnum.h"
 
-class iFSM;
-
 class IntroState : public iState {
 public:
-    IntroState(iFSM* fsm);
+    IntroState();
     virtual ~IntroState();
     
     virtual void start(cocos2d::CCScene* scene);

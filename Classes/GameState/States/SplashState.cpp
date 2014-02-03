@@ -7,15 +7,15 @@
 //
 
 #include "SplashState.h"
-#include "iFSM.h"
 #include "CommonEnum.h"
 #include "SplashNode.h"
 #include "cocos2d.h"
+#include "FiniteStateMachine.h"
 
 USING_NS_CC;
 
-SplashState::SplashState(iFSM* fsm)
-: iState(fsm, CommonEnum::eStateSplash)
+SplashState::SplashState()
+: iState(CommonEnum::eStateSplash)
 {
 }
 SplashState::~SplashState() {
@@ -44,9 +44,6 @@ void SplashState::update(float dt) {
 }
 void SplashState::onEvent(CommonEnum::Event event) {
     if( event==CommonEnum::eEventSplashFadeoutFinished ) {
-        if( gameFSM==NULL )
-            CCAssert(true, "gameFSM instance is NULL.");
-        
-        gameFSM->setState(CommonEnum::eStateIntro);
+        FiniteStateMachine::getInstance()->setState(CommonEnum::eStateIntro);
     }
 }

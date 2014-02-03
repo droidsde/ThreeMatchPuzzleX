@@ -7,11 +7,11 @@
 //
 
 #include "IntroState.h"
-#include "iFSM.h"
 #include "IntroNode.h"
+#include "FiniteStateMachine.h"
 
-IntroState::IntroState(iFSM* fsm)
-: iState(fsm, CommonEnum::eStateIntro)
+IntroState::IntroState()
+: iState(CommonEnum::eStateIntro)
 {
 }
 IntroState::~IntroState() {
@@ -28,6 +28,6 @@ void IntroState::update(float dt) {
 }
 void IntroState::onEvent(CommonEnum::Event event) {
     if( event==CommonEnum::eEventIntroEnded ) {
-        gameFSM->setState(CommonEnum::eStateTitle);
+        FiniteStateMachine::getInstance()->setState(CommonEnum::eStateTitle);
     }
 }
