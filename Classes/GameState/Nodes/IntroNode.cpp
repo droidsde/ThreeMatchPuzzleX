@@ -61,7 +61,6 @@ bool IntroNode::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
     return true;
 }
 void IntroNode::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
-    CCLog("IntroNode::ccTouchEnded");
     showIntro();
 }
 void IntroNode::showIntro() {

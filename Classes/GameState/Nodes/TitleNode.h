@@ -11,9 +11,12 @@
 #include "iNode.h"
 #include "CommonEnum.h"
 
-class TitleNode : public iNode {
+class TitleNode : public iNode, public cocos2d::CCTouchDelegate {
 public:
     virtual bool init();
     virtual void onEvent(CommonEnum::Event event);
     CREATE_FUNC(TitleNode);
+    
+    virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+    virtual void ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
 };
