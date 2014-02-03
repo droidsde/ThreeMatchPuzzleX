@@ -19,5 +19,6 @@ protected:
     iState* linkedState = NULL;
     
 public:
+    // this code is terrible code. Because, it is happend many mistake.
     void setLinkedState(iState* state) { linkedState = state; }
 };

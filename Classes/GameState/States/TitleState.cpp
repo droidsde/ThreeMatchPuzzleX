@@ -7,6 +7,7 @@
 //
 
 #include "TitleState.h"
+#include "TitleNode.h"
 
 TitleState::TitleState(iFSM* fsm)
 : iState(fsm, CommonEnum::eStateTitle)
@@ -17,6 +18,11 @@ TitleState::~TitleState() {
 
 void TitleState::start(cocos2d::CCScene* scene) {
     // create node
+    linkedNode = TitleNode::create();
+    linkedNode->setLinkedState(this);
+    linkedNode->retain();
+    rootNode->addChild(linkedNode);
+    scene->addChild(rootNode);
 }
 void TitleState::update(float dt) {
 }

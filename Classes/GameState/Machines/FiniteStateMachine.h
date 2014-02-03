@@ -28,4 +28,5 @@ protected:
     iState* currentState;
     virtual iState* create(CommonEnum::State targetState, bool dontRemoveCurrentState=false);
     void start();
+    void startWithState(CommonEnum::State state);
 };

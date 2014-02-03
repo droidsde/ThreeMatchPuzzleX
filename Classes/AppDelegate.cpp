@@ -49,7 +49,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // run with scene
-    FiniteStateMachine::getInstance()->start();
+    FiniteStateMachine::getInstance()->startWithState(CommonEnum::eStateTitle);
 
     return true;
 }

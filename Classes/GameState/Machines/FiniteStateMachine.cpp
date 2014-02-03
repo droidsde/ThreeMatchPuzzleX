@@ -23,12 +23,15 @@ FiniteStateMachine* FiniteStateMachine::getInstance() {
     
     return pInstance;
 }
-void FiniteStateMachine::start() {
+void FiniteStateMachine::startWithState(CommonEnum::State state) {
     CCScene* scene = ThreeMatchPuzzleScene::scene();
     CCDirector::sharedDirector()->runWithScene(scene);
     
-    currentState = create(CommonEnum::eStateSplash);
+    currentState = create(state);
     currentState->start(scene);
+}
+void FiniteStateMachine::start() {
+    startWithState(CommonEnum::eStateSplash);
 }
 void FiniteStateMachine::update(float dt) {
     if( currentState!=NULL )
