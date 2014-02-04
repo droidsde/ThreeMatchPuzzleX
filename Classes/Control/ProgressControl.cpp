@@ -38,3 +38,15 @@ ProgressControl* ProgressControl::create(cocos2d::CCSprite* background,
         return progressControl;
     }
 }
+
+ProgressControl* ProgressControl::create(const char* backgroundImgFileName,
+                               const char* progressImgFileName,
+                               const char* format,
+                               CommonEnum::ProgressDirection direction)
+{
+    CCSprite* background = CCSprite::create(backgroundImgFileName);
+    CCSprite* progress = CCSprite::create(progressImgFileName);
+    
+    ProgressControl* progressControl = ProgressControl::create(background, progress, format, direction);
+    return progressControl;
+}

@@ -28,4 +28,9 @@ public:
                                    cocos2d::CCSprite* progress,
                                    const char* format,
                                    CommonEnum::ProgressDirection direction=CommonEnum::eProgressToLeft);
+    
+    static ProgressControl* create(const char* backgroundImgFileName,
+                                   const char* progressImgFileName,
+                                   const char* format,
+                                   CommonEnum::ProgressDirection direction=CommonEnum::eProgressToLeft);
 };
