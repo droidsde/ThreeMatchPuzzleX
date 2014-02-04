@@ -77,6 +77,11 @@ namespace CommonEnum {
         
     } Event;
     
+    typedef enum {
+        eProgressToLeft,
+        eProgressToRight,
+        eProgressToCenter,
+    } ProgressDirection;
 };
 
 //#endif /* defined(__ThreeMatchPuzzleX__CommonEnum__) */

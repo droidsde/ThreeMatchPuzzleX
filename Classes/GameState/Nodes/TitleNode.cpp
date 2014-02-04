@@ -14,8 +14,7 @@ bool TitleNode::init() {
     if( !iNode::init() )
         return false;
     
-    CCTouchDispatcher* pDispatcher = CCDirector::sharedDirector()->getTouchDispatcher();
-    pDispatcher->addTargetedDelegate(this, 0, true);
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
     
     CCSize designResoulutionSize = CCEGLView::sharedOpenGLView()->getDesignResolutionSize();
     CCSize labelDimension = CCSizeMake(300, 200);
@@ -26,6 +25,9 @@ bool TitleNode::init() {
     this->addChild(sceneDebugLabel);
     
     return true;
+}
+void TitleNode::onExit() {
+    CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
 }
 void TitleNode::onEvent(CommonEnum::Event event) {
 }

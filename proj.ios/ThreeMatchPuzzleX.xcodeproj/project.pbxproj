@@ -280,6 +280,7 @@
 		C37B014F1899035200B1699B /* GameStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37B014D1899035200B1699B /* GameStateManager.cpp */; };
 		C3BCAE23189BCD8A001C381C /* iFSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BCAE21189BCD8A001C381C /* iFSM.cpp */; };
 		C3BF220A1891583500270D56 /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF22081891583500270D56 /* iScene.cpp */; };
+		C3E3BA6218A063C9007C2736 /* ProgressControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3E3BA6018A063C9007C2736 /* ProgressControl.cpp */; };
 		C3F91E31189D240900BAA4B2 /* iEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F91E2F189D240900BAA4B2 /* iEventHandler.cpp */; };
 		D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41A0AD0160F154A004552AE /* Default-568h@2x.png */; };
 		D446FD6E16102124000ADA7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD6D16102124000ADA7B /* Default@2x.png */; };
@@ -858,6 +859,8 @@
 		C3BF22081891583500270D56 /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = iScene.cpp; path = ../Classes/Abstract/iScene.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C3BF22091891583500270D56 /* iScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = iScene.h; path = ../Classes/Abstract/iScene.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C3BF221D1891656200270D56 /* CommonEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CommonEnum.h; path = ../Classes/Common/CommonEnum.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C3E3BA6018A063C9007C2736 /* ProgressControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProgressControl.cpp; path = ../Classes/Control/ProgressControl.cpp; sourceTree = "<group>"; };
+		C3E3BA6118A063C9007C2736 /* ProgressControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressControl.h; path = ../Classes/Control/ProgressControl.h; sourceTree = "<group>"; };
 		C3F91E2F189D240900BAA4B2 /* iEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iEventHandler.cpp; path = ../Classes/Abstract/iEventHandler.cpp; sourceTree = "<group>"; };
 		C3F91E30189D240900BAA4B2 /* iEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iEventHandler.h; path = ../Classes/Abstract/iEventHandler.h; sourceTree = "<group>"; };
 		D41A0AD0160F154A004552AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../proj.ios/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -1390,6 +1393,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C3E3BA5F18A0638C007C2736 /* Control */,
 				C3BF220B1891586500270D56 /* Scene */,
 				C3615F8518969E67009C0378 /* GameState */,
 				C33CBF851892E1E300854F7A /* Block */,
@@ -2026,6 +2030,15 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		C3E3BA5F18A0638C007C2736 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3BA6018A063C9007C2736 /* ProgressControl.cpp */,
+				C3E3BA6118A063C9007C2736 /* ProgressControl.h */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2227,6 +2240,7 @@
 				15A3DA391682F826002FB0C5 /* CCControlLoader.cpp in Sources */,
 				15A3DA3A1682F826002FB0C5 /* CCData.cpp in Sources */,
 				15A3DA3B1682F826002FB0C5 /* CCLabelBMFontLoader.cpp in Sources */,
+				C3E3BA6218A063C9007C2736 /* ProgressControl.cpp in Sources */,
 				15A3DA3C1682F826002FB0C5 /* CCLabelTTFLoader.cpp in Sources */,
 				15A3DA3D1682F826002FB0C5 /* CCLayerColorLoader.cpp in Sources */,
 				15A3DA3E1682F826002FB0C5 /* CCLayerGradientLoader.cpp in Sources */,

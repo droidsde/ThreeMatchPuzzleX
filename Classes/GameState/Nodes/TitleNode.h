@@ -14,6 +14,8 @@
 class TitleNode : public iNode, public cocos2d::CCTouchDelegate {
 public:
     virtual bool init();
+    virtual void onExit();
+    
     virtual void onEvent(CommonEnum::Event event);
     CREATE_FUNC(TitleNode);
     
