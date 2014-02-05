@@ -27,7 +27,6 @@ bool TitleNode::init() {
     this->addChild(sceneDebugLabel);
     
     ProgressControl* progress = ProgressControl::create("UI/gauge_bg.png", "UI/gauge_content.png", NULL, CommonEnum::eProgressToRight);
-    CCSize progressSize = progress->boundingBox().size;
     progress->setPosition(ccp((designResoulutionSize.width-progress->boundingBox().size.width)/2, 100));
     this->addChild(progress);
     
