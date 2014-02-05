@@ -11,8 +11,9 @@
 #include "cocos2d.h"
 #include "CommonEnum.h"
 
-class ProgressControl : public cocos2d::CCLayer {
-    
+//class ProgressControl : public cocos2d::CCLayerColor {
+class ProgressControl : public cocos2d::CCNode {
+
 private:
     CommonEnum::ProgressDirection progressDirection = CommonEnum::eProgressToLeft;
     cocos2d::CCSprite* gauge = NULL;
@@ -24,7 +25,7 @@ private:
     virtual bool init(cocos2d::CCSprite* background,
                       cocos2d::CCSprite* progress,
                       const char* format,
-                      CommonEnum::ProgressDirection direction=CommonEnum::eProgressToLeft);
+                      CommonEnum::ProgressDirection direction=CommonEnum::eProgressToRight);
     
     void updateProgress();
     
@@ -38,10 +39,10 @@ public:
     static ProgressControl* create(cocos2d::CCSprite* background,
                                    cocos2d::CCSprite* progress,
                                    const char* format,
-                                   CommonEnum::ProgressDirection direction=CommonEnum::eProgressToLeft);
+                                   CommonEnum::ProgressDirection direction=CommonEnum::eProgressToRight);
     
     static ProgressControl* create(const char* backgroundImgFileName,
                                    const char* progressImgFileName,
                                    const char* format,
-                                   CommonEnum::ProgressDirection direction=CommonEnum::eProgressToLeft);
+                                   CommonEnum::ProgressDirection direction=CommonEnum::eProgressToRight);
 };

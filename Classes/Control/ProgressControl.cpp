@@ -17,19 +17,21 @@ bool ProgressControl::init(cocos2d::CCSprite* background,
     if( !CCNode::init() )
         return false;
     
-    float scaleFactor = CCDirector::sharedDirector()->getContentScaleFactor();
-    
-    this->addChild(background);
-    
+    this->setAnchorPoint(ccp(0,0));
+    this->setPosition(ccp(0, 0));
     
     bg = background;
     bg->retain();
     
-    this->addChild(progress);
-    
-    
     gauge = progress;
     gauge->retain();
+    
+    this->addChild(bg);
+    this->addChild(gauge);
+    
+    progressDirection = direction;
+    
+    float scaleFactor = CCDirector::sharedDirector()->getContentScaleFactor();
     
     if( direction==CommonEnum::eProgressToLeft ) {
         background->setAnchorPoint(ccp(1, 0));
@@ -49,8 +51,6 @@ bool ProgressControl::init(cocos2d::CCSprite* background,
     
     setValue(1.0f);
     
-    scheduleUpdate();
-    
     return true;
 }
 void ProgressControl::updateProgress() {
@@ -69,6 +69,8 @@ void ProgressControl::updateProgress() {
 void ProgressControl::setValue(float value) {
     CCAssert(gauge!=NULL, "gauge instance is NULL!");
     
+    scheduleUpdate();
+    
     if( value>1.0f )
         value = 1.0f;
     
@@ -86,21 +88,27 @@ void ProgressControl::onEXit() {
     }
 }
 void ProgressControl::update(float dt) {
-    if( goalValue<=currentValue )
+    if( goalValue<=currentValue ) {
+        unscheduleUpdate();
         return;
+    }
     
     currentValue = currentValue+dt;
     
     updateProgress();
 }
 CCRect ProgressControl::boundingBox() {
-    return bg->boundingBox();
+    CCRect boundingBox = bg->boundingBox();
+    boundingBox = CCRectMake(boundingBox.origin.x, boundingBox.origin.y, boundingBox.size.width*this->getScaleX(), boundingBox.size.height*this->getScaleY());
+    return boundingBox;
 }
 ProgressControl* ProgressControl::create(cocos2d::CCSprite* background,
                                          cocos2d::CCSprite* progress,
                                          const char* format,
                                          CommonEnum::ProgressDirection direction)
 {
+    CCAssert(background!=NULL&&progress!=NULL, "Background or Progress Sprite is NULL!");
+    
     ProgressControl* progressControl = new ProgressControl();
     if( progressControl!=NULL && progressControl->init(background, progress, format, direction) ) {
         progressControl->autorelease();
