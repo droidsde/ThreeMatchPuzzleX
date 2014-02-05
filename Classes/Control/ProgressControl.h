@@ -30,7 +30,7 @@ private:
     void updateProgress();
     
 public:
-    virtual void onEXit();
+    virtual void onExit();
     virtual void update(float dt);
     virtual cocos2d::CCRect boundingBox();
     

@@ -76,7 +76,7 @@ void ProgressControl::setValue(float value) {
     
     goalValue = value;
 }
-void ProgressControl::onEXit() {
+void ProgressControl::onExit() {
     if( bg!=NULL ) {
         delete bg;
         bg = NULL;
