@@ -80,7 +80,6 @@ namespace CommonEnum {
     typedef enum {
         eProgressToLeft,
         eProgressToRight,
-        eProgressToCenter,
     } ProgressDirection;
 };
 

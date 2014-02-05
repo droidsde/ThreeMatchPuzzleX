@@ -10,14 +10,91 @@
 
 USING_NS_CC;
 
-bool ProgressControl::init() {
+bool ProgressControl::init(cocos2d::CCSprite* background,
+                           cocos2d::CCSprite* progress,
+                           const char* format,
+                           CommonEnum::ProgressDirection direction) {
     if( !CCNode::init() )
         return false;
     
+    float scaleFactor = CCDirector::sharedDirector()->getContentScaleFactor();
+    
+    this->addChild(background);
+    
+    
+    bg = background;
+    bg->retain();
+    
+    this->addChild(progress);
+    
+    
+    gauge = progress;
+    gauge->retain();
+    
+    if( direction==CommonEnum::eProgressToLeft ) {
+        background->setAnchorPoint(ccp(1, 0));
+        progress->setAnchorPoint(ccp(1, 0));
+        background->setPosition(ccp(background->getTexture()->getPixelsWide()/scaleFactor, 0));
+        progress->setPosition(ccp(progress->getTexture()->getPixelsWide()/scaleFactor, 0));
+    }
+    else {
+        background->setAnchorPoint(ccp(0, 0));
+        progress->setAnchorPoint(ccp(0, 0));
+        background->setPosition(ccp(0, 0));
+        progress->setPosition(ccp(0, 0));
+    }
+    
+    goalValue = currentValue = 0.0f;
+    updateProgress();
+    
+    setValue(1.0f);
+    
+    scheduleUpdate();
+    
     return true;
 }
-void ProgressControl::onEXit() {
+void ProgressControl::updateProgress() {
+    unsigned int width = gauge->getTexture()->getPixelsWide();
+    unsigned int height = gauge->getTexture()->getPixelsHigh();
+    float scaleFactor = CCDirector::sharedDirector()->getContentScaleFactor();
     
+    if( progressDirection==CommonEnum::eProgressToLeft ) {
+        gauge->setTextureRect(CCRectMake(width/scaleFactor-width/scaleFactor*(currentValue), 0, width/scaleFactor, height/scaleFactor));
+        gauge->setPosition(ccp(width/scaleFactor+width/scaleFactor-width/scaleFactor*(currentValue), 0));
+    }
+    else if( progressDirection==CommonEnum::eProgressToRight ) {
+        gauge->setTextureRect(CCRectMake(0, 0, width/scaleFactor*currentValue, height/scaleFactor));
+    }
+}
+void ProgressControl::setValue(float value) {
+    CCAssert(gauge!=NULL, "gauge instance is NULL!");
+    
+    if( value>1.0f )
+        value = 1.0f;
+    
+    goalValue = value;
+}
+void ProgressControl::onEXit() {
+    if( bg!=NULL ) {
+        delete bg;
+        bg = NULL;
+    }
+    
+    if( gauge!=NULL ) {
+        delete gauge;
+        gauge = NULL;
+    }
+}
+void ProgressControl::update(float dt) {
+    if( goalValue<=currentValue )
+        return;
+    
+    currentValue = currentValue+dt;
+    
+    updateProgress();
+}
+CCRect ProgressControl::boundingBox() {
+    return bg->boundingBox();
 }
 ProgressControl* ProgressControl::create(cocos2d::CCSprite* background,
                                          cocos2d::CCSprite* progress,
@@ -25,11 +102,8 @@ ProgressControl* ProgressControl::create(cocos2d::CCSprite* background,
                                          CommonEnum::ProgressDirection direction)
 {
     ProgressControl* progressControl = new ProgressControl();
-    if( progressControl!=NULL && progressControl->init() ) {
+    if( progressControl!=NULL && progressControl->init(background, progress, format, direction) ) {
         progressControl->autorelease();
-        
-        progressControl->progressDirection = direction;
-        
         return progressControl;
     }
     else {
