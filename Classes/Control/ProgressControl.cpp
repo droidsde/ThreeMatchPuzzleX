@@ -10,9 +10,11 @@
 
 USING_NS_CC;
 
-bool ProgressControl::init(cocos2d::CCSprite* background,
-                           cocos2d::CCSprite* progress,
+bool ProgressControl::init(CCSprite* background,
+                           CCSprite* progress,
                            const char* format,
+                           CCNode* target,
+                           SEL_CallFuncO endSelector,
                            CommonEnum::ProgressDirection direction) {
     if( !CCNode::init() )
         return false;
@@ -31,6 +33,12 @@ bool ProgressControl::init(cocos2d::CCSprite* background,
     
     progressDirection = direction;
     
+    selectorTarget = target;
+    if( selectorTarget!=NULL )
+        selectorTarget->retain();
+    selector = endSelector;
+    
+    
     float scaleFactor = CCDirector::sharedDirector()->getContentScaleFactor();
     
     if( direction==CommonEnum::eProgressToLeft ) {
@@ -48,9 +56,7 @@ bool ProgressControl::init(cocos2d::CCSprite* background,
     
     goalValue = currentValue = 0.0f;
     updateProgress();
-    
-    setValue(1.0f);
-    
+        
     return true;
 }
 void ProgressControl::updateProgress() {
@@ -77,19 +83,25 @@ void ProgressControl::setValue(float value) {
     goalValue = value;
 }
 void ProgressControl::onExit() {
-    if( bg!=NULL ) {
-        delete bg;
-        bg = NULL;
-    }
+    if( selectorTarget!=NULL )
+        delete selectorTarget;
+    selectorTarget = NULL;
     
-    if( gauge!=NULL ) {
+    if( bg!=NULL )
+        delete bg;
+    bg = NULL;
+    
+    if( gauge!=NULL )
         delete gauge;
-        gauge = NULL;
-    }
+    gauge = NULL;
 }
 void ProgressControl::update(float dt) {
     if( goalValue<=currentValue ) {
         unscheduleUpdate();
+        
+        if( selectorTarget!=NULL && selector!=NULL ) {
+            (selectorTarget->*selector)(this);
+        }
         return;
     }
     
@@ -105,12 +117,14 @@ CCRect ProgressControl::boundingBox() {
 ProgressControl* ProgressControl::create(cocos2d::CCSprite* background,
                                          cocos2d::CCSprite* progress,
                                          const char* format,
+                                         cocos2d::CCNode* target,
+                                         cocos2d::SEL_CallFuncO endSelector,
                                          CommonEnum::ProgressDirection direction)
 {
     CCAssert(background!=NULL&&progress!=NULL, "Background or Progress Sprite is NULL!");
     
     ProgressControl* progressControl = new ProgressControl();
-    if( progressControl!=NULL && progressControl->init(background, progress, format, direction) ) {
+    if( progressControl!=NULL && progressControl->init(background, progress, format, target, endSelector, direction) ) {
         progressControl->autorelease();
         return progressControl;
     }
@@ -122,13 +136,15 @@ ProgressControl* ProgressControl::create(cocos2d::CCSprite* background,
 }
 
 ProgressControl* ProgressControl::create(const char* backgroundImgFileName,
-                               const char* progressImgFileName,
-                               const char* format,
-                               CommonEnum::ProgressDirection direction)
+                                         const char* progressImgFileName,
+                                         const char* format,
+                                         cocos2d::CCNode* target,
+                                         cocos2d::SEL_CallFuncO endSelector,
+                                         CommonEnum::ProgressDirection direction)
 {
     CCSprite* background = CCSprite::create(backgroundImgFileName);
     CCSprite* progress = CCSprite::create(progressImgFileName);
     
-    ProgressControl* progressControl = ProgressControl::create(background, progress, format, direction);
+    ProgressControl* progressControl = ProgressControl::create(background, progress, format, target, endSelector, direction);
     return progressControl;
 }

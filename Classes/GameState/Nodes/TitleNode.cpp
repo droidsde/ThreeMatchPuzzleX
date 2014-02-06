@@ -26,8 +26,9 @@ bool TitleNode::init() {
     sceneDebugLabel->setColor(ccRED);
     this->addChild(sceneDebugLabel);
     
-    ProgressControl* progress = ProgressControl::create("UI/gauge_bg.png", "UI/gauge_content.png", NULL, CommonEnum::eProgressToRight);
+    ProgressControl* progress = ProgressControl::create("UI/gauge_bg.png", "UI/gauge_content.png", NULL, this, callfuncO_selector(TitleNode::onProgressEnded), CommonEnum::eProgressToRight);
     progress->setPosition(ccp((designResoulutionSize.width-progress->boundingBox().size.width)/2, 100));
+    progress->setValue(1.0f);
     this->addChild(progress);
     
     return true;
@@ -41,4 +42,9 @@ bool TitleNode::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
     return true;
 }
 void TitleNode::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+}
+void TitleNode::onProgressEnded(cocos2d::CCObject* sender) {
+    CCLog("TitleNode::onProgressEnded");
+    // cast to ProgressControl from CCObject
+    // and you can access progress value using the getValue method.
 }

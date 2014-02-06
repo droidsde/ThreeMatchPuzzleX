@@ -21,4 +21,6 @@ public:
     
     virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
     virtual void ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+    
+    void onProgressEnded(cocos2d::CCObject* sender);
 };
