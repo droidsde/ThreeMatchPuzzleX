@@ -6,9 +6,28 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__StagesNode__
-#define __ThreeMatchPuzzleX__StagesNode__
+#pragma once
 
-#include <iostream>
+#include "iNode.h"
 
-#endif /* defined(__ThreeMatchPuzzleX__StagesNode__) */
+class StagesNode : public iNode {
+public:
+    virtual bool init();
+    virtual void onEvent(CommonEnum::Event event);
+    CREATE_FUNC(StagesNode);
+};
+
+//#include "cocos2d.h"
+
+//class SplashNode : public iNode {
+//public:
+//    virtual bool init();
+//    virtual void onEvent(CommonEnum::Event event);
+//    CREATE_FUNC(SplashNode);
+//    
+//private:
+//    void onEventFadeIn();
+//    void onEventFadeOut();
+//    void onEndFadeOut();
+//};
+

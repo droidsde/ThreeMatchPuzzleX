@@ -8,14 +8,13 @@
 
 #include "TitleNode.h"
 #include "ProgressControl.h"
+#include "FiniteStateMachine.h"
 
 USING_NS_CC;
 
 bool TitleNode::init() {
     if( !iNode::init() )
         return false;
-    
-    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
     
     CCSize designResoulutionSize = CCEGLView::sharedOpenGLView()->getDesignResolutionSize();
     
@@ -38,13 +37,26 @@ void TitleNode::onExit() {
 }
 void TitleNode::onEvent(CommonEnum::Event event) {
 }
-bool TitleNode::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+bool TitleNode::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {
     return true;
 }
-void TitleNode::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+void TitleNode::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent) {
 }
-void TitleNode::onProgressEnded(cocos2d::CCObject* sender) {
+void TitleNode::onProgressEnded(CCObject* sender) {
     CCLog("TitleNode::onProgressEnded");
-    // cast to ProgressControl from CCObject
-    // and you can access progress value using the getValue method.
+    
+    CCNode* node = dynamic_cast<CCNode*>(sender);
+    node->removeFromParentAndCleanup(true);
+    
+    CCSize designResoulutionSize = CCEGLView::sharedOpenGLView()->getDesignResolutionSize();
+    
+    CCLabelTTF* touchToStart = CCLabelTTF::create("Touch to Start!", "Arial", 15);
+    touchToStart->setAnchorPoint(ccp(0.5f, 1));
+    touchToStart->setPosition(ccp(designResoulutionSize.width/2, designResoulutionSize.height/2-100));
+    touchToStart->setColor(ccRED);
+    this->addChild(touchToStart);
+    
+    FiniteStateMachine::getInstance()->setState(CommonEnum::eStateStages);
+    
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
 }

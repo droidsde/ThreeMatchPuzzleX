@@ -6,9 +6,17 @@
 //
 //
 
-#ifndef __ThreeMatchPuzzleX__StagesState__
-#define __ThreeMatchPuzzleX__StagesState__
+#pragma once
 
-#include <iostream>
+#include "iState.h"
 
-#endif /* defined(__ThreeMatchPuzzleX__StagesState__) */
+class CCScene;
+
+class StagesState : public iState {
+public:
+    StagesState();
+    virtual ~StagesState();
+    
+    virtual void start(CCScene* scene);
+    virtual void onEvent(CommonEnum::Event event);
+};
